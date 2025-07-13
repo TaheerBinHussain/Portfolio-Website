@@ -4,56 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taheer Bin Hussain - DevOps Enthusiast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     body {
-      background: #f4f6f8;
-      color: #333;
-      padding: 20px;
+      background: linear-gradient(135deg, #e0e7ff, #f0fdf4);
+      color: #1e293b;
+      padding: 30px;
     }
     header {
-      background: #0d1117;
+      background: #1e293b;
       color: #fff;
-      padding: 30px 20px;
-      border-radius: 10px;
+      padding: 40px 20px;
+      border-radius: 20px;
       text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
     header p {
-      font-size: 1.2rem;
-      color: #c9d1d9;
+      font-size: 1.3rem;
+      color: #94a3b8;
     }
     section {
       background: #ffffff;
-      margin: 30px 0;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 40px 0;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
     }
     h2 {
-      color: #0a84ff;
-      margin-bottom: 15px;
+      color: #3b82f6;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
     }
     ul {
       list-style: none;
-      padding-left: 10px;
+      padding-left: 0;
     }
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #10b981;
     }
     .project {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .highlight {
-      color: #0a84ff;
-      font-weight: bold;
+      color: #0ea5e9;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -65,7 +87,7 @@
 
   <section>
     <h2>👨‍🎓 About Me</h2>
-    <p>I’m currently a university student who has completed <strong>2 semesters</strong>. I'm passionate about DevOps, backend systems, and automation.</p>
+    <p>I’m currently a university student who has completed <strong>2 semesters</strong>. I'm passionate about DevOps, backend systems, and automation. I love building things that run smoothly and efficiently!</p>
   </section>
 
   <section>
@@ -98,5 +120,9 @@
       <li>Earn valuable certifications</li>
     </ul>
   </section>
+
+  <footer>
+    Made with 💙 by Taheer Bin Hussain
+  </footer>
 </body>
 </html>
