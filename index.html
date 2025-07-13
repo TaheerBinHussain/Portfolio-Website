@@ -18,35 +18,65 @@
       padding: 30px;
     }
     header {
-      background: #1e293b;
+      background: #0f172a;
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       border-radius: 20px;
       text-align: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, #3b82f6 0%, transparent 60%);
+      animation: rotate 20s linear infinite;
+      opacity: 0.1;
+    }
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin-bottom: 10px;
     }
     header p {
       font-size: 1.3rem;
-      color: #94a3b8;
+      color: #cbd5e1;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
     }
     section {
       background: #ffffff;
-      margin: 40px 0;
-      padding: 30px;
+      margin: 50px 0;
+      padding: 40px;
       border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
       transition: transform 0.3s ease;
     }
     section:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
     h2 {
       color: #3b82f6;
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
     ul {
@@ -54,75 +84,149 @@
       padding-left: 0;
     }
     ul li {
-      margin-bottom: 10px;
-      padding-left: 20px;
+      margin-bottom: 12px;
+      padding-left: 25px;
       position: relative;
+      line-height: 1.6;
     }
     ul li::before {
       content: "✔";
       position: absolute;
       left: 0;
       color: #10b981;
+      font-size: 1.2rem;
     }
     .project {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .highlight {
       color: #0ea5e9;
       font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #f9fafb;
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+    .card p {
+      margin-bottom: 12px;
     }
     footer {
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #64748b;
-      margin-top: 50px;
+      margin-top: 70px;
+    }
+    .socials {
+      margin-top: 20px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #1e40af;
+      font-size: 1.2rem;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Taheer Bin Hussain</h1>
-    <p>DevOps Enthusiast | Beginner Python Developer | Docker & Git Learner</p>
+    <p>DevOps Enthusiast | Python Developer | Docker & Git Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>👨‍🎓 About Me</h2>
-    <p>I’m currently a university student who has completed <strong>2 semesters</strong>. I'm passionate about DevOps, backend systems, and automation. I love building things that run smoothly and efficiently!</p>
+    <div class="card">
+      <p>Hello! I’m Taheer Bin Hussain, an aspiring DevOps Engineer with a strong passion for backend technologies, automation, and CI/CD pipelines. I love simplifying complex workflows and making deployment smooth and efficient.</p>
+      <p>I thrive on hands-on experience, and everything I’ve learned has been through curiosity, dedication, and consistent experimentation with tools and technologies.</p>
+    </div>
   </section>
 
-  <section>
+  <section id="education">
+    <h2>🏫 Education</h2>
+    <div class="card">
+      <p><strong>University:</strong> XYZ University, Pakistan</p>
+      <p><strong>Program:</strong> Bachelor of Computer Science</p>
+      <p><strong>Year:</strong> Currently in 3rd Semester</p>
+      <p>My academic journey has been focused on learning both theoretical and practical aspects of computing — from databases and networking to programming and system design. I’m consistently involved in lab projects and team assignments that sharpen my collaboration and technical skills.</p>
+    </div>
+  </section>
+
+  <section id="skills">
     <h2>🛠️ Skills</h2>
-    <ul>
-      <li>💻 Linux (Basic)</li>
-      <li>🐳 Docker (Basics and Docker Compose)</li>
-      <li>🔧 Git & GitHub (Repositories, Branching, .gitignore, GitHub Pages)</li>
-      <li>🐍 Python (Beginner level)</li>
-      <li>🗃️ PostgreSQL Integration (in progress)</li>
-      <li>⚙️ CI/CD Concepts (Learning GitHub Actions)</li>
-    </ul>
+    <div class="card">
+      <ul>
+        <li>💻 Linux (Basic CLI commands, navigation, permissions)</li>
+        <li>🐳 Docker (Dockerfiles, Docker Compose, multi-container setups)</li>
+        <li>🔧 Git & GitHub (repo management, branching, pull requests, GitHub Actions)</li>
+        <li>🐍 Python (Basics, functions, scripts, working with files)</li>
+        <li>🗃️ PostgreSQL (Dockerized DB, simple queries, integrations)</li>
+        <li>🚀 GitHub Actions (CI/CD, automated deployment workflows)</li>
+        <li>📄 HTML & CSS (Responsive layout, gradients, animations)</li>
+        <li>📦 MS Access (Forms, queries, reports for basic data apps)</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>🚧 Projects</h2>
-    <div class="project">
-      <p><span class="highlight">DevTasker</span> - A Dockerized Flask application (in progress) with PostgreSQL integration and CI/CD pipeline using GitHub Actions.</p>
+    <div class="card project">
+      <p><span class="highlight">DevTasker</span></p>
+      <p>A Dockerized Flask-based web app to help developers manage tasks. Integrates PostgreSQL via containers. CI/CD configured using GitHub Actions. Live deploy planned after database connectivity is complete.</p>
     </div>
-    <div class="project">
-      <p><span class="highlight">Expense Tracker</span> - Built with MS Access in early stages of learning.</p>
+    <div class="card project">
+      <p><span class="highlight">Expense Tracker</span></p>
+      <p>A desktop-based app built with Microsoft Access. Used to manage and visualize daily expenses with queries, tables, and reports. Helped understand how databases work in practice.</p>
+    </div>
+    <div class="card project">
+      <p><span class="highlight">Portfolio Website</span></p>
+      <p>You're viewing it now! Made with pure HTML & CSS. Deployed with GitHub Actions and GitHub Pages. It’s part of my journey to mastering CI/CD and clean front-end design.</p>
     </div>
   </section>
 
-  <section>
+  <section id="goals">
     <h2>🎯 Goals</h2>
-    <ul>
-      <li>Master CI/CD workflows</li>
-      <li>Build real-world DevOps projects</li>
-      <li>Earn valuable certifications</li>
-    </ul>
+    <div class="card">
+      <ul>
+        <li>Become a certified DevOps Engineer with hands-on tools like Docker, Jenkins, and Kubernetes</li>
+        <li>Contribute to real open-source DevOps/Backend projects</li>
+        <li>Learn and use monitoring tools like Prometheus and Grafana</li>
+        <li>Deploy a production-grade app using full CI/CD pipeline</li>
+        <li>Launch my own automation-based SaaS project</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <div class="card">
+      <p><strong>Email:</strong> taheer@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/TaheerBinHussain" target="_blank">TaheerBinHussain</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/taheerbinhussain" target="_blank">linkedin.com/in/taheerbinhussain</a></p>
+      <p>I’m always open to learning, collaboration, and working on cool DevOps projects. Let’s connect and grow together 🚀</p>
+    </div>
   </section>
 
   <footer>
-    Made with 💙 by Taheer Bin Hussain
+    Made with 💙 by Taheer Bin Hussain — 2025
+    <div class="socials">
+      <a href="https://github.com/TaheerBinHussain" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/taheerbinhussain" target="_blank">LinkedIn</a>
+    </div>
   </footer>
 </body>
 </html>
