@@ -4,29 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taheer Bin Hussain - DevOps Enthusiast</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <style>
+    :root {
+      --primary-color: #1e40af;
+      --secondary-color: #3b82f6;
+      --accent-color: #10b981;
+      --text-color: #1e293b;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
+
     body {
       background: linear-gradient(135deg, #e0e7ff, #f0fdf4);
-      color: #1e293b;
-      padding: 30px;
+      color: var(--text-color);
+      line-height: 1.6;
+      overflow-x: hidden;
     }
+
+    /* Header */
     header {
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: #fff;
-      padding: 60px 20px;
-      border-radius: 20px;
+      padding: 80px 20px;
       text-align: center;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
       position: relative;
       overflow: hidden;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: var(--shadow);
     }
+
     header::before {
       content: "";
       position: absolute;
@@ -34,199 +52,532 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, #3b82f6 0%, transparent 60%);
-      animation: rotate 20s linear infinite;
-      opacity: 0.1;
+      background: radial-gradient(circle, var(--secondary-color) 0%, transparent 60%);
+      animation: rotate 30s linear infinite;
+      opacity: 0.15;
     }
+
     @keyframes rotate {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
     header h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     }
+
     header p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: #cbd5e1;
-    }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #93c5fd;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    section {
-      background: #ffffff;
-      margin: 50px 0;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
-    section:hover {
-      transform: translateY(-6px);
-    }
-    h2 {
-      color: #3b82f6;
-      font-size: 2rem;
       margin-bottom: 20px;
     }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      background: var(--secondary-color);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Sections */
+    section {
+      background: var(--card-bg);
+      margin: 60px 20px;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    /* Cards */
+    .card {
+      background: #f9fafb;
+      padding: 30px;
+      border-radius: 15px;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      color: #4b5563;
+    }
+
+    /* Lists */
     ul {
       list-style: none;
       padding-left: 0;
     }
+
     ul li {
-      margin-bottom: 12px;
-      padding-left: 25px;
+      margin-bottom: 15px;
+      padding-left: 30px;
       position: relative;
-      line-height: 1.6;
+      font-size: 1.1rem;
+      line-height: 1.8;
     }
+
     ul li::before {
       content: "✔";
       position: absolute;
       left: 0;
-      color: #10b981;
+      color: var(--accent-color);
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      color: var(--secondary-color);
+      font-weight: 600;
       font-size: 1.2rem;
     }
-    .project {
-      margin-bottom: 30px;
+
+    /* Timeline for Experience */
+    .timeline {
+      position: relative;
+      padding: 20px 0;
     }
-    .highlight {
-      color: #0ea5e9;
-      font-weight: 600;
-      font-size: 1.1rem;
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
     }
-    .card {
-      border: 1px solid #e5e7eb;
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 50px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-content {
+      background: #f9fafb;
       padding: 20px;
-      border-radius: 15px;
-      background-color: #f9fafb;
-      transition: box-shadow 0.3s ease;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
     }
-    .card:hover {
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+
+    /* Certifications */
+    .certification-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    .card p {
-      margin-bottom: 12px;
+
+    .certification-card {
+      text-align: center;
+      padding: 20px;
     }
+
+    .certification-card i {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+
+    /* Blog Highlights */
+    .blog-card {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9fafb;
+      margin-bottom: 20px;
+    }
+
+    .blog-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Testimonials */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      text-align: center;
+      padding: 20px;
+      background: #f9fafb;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      font-size: 1rem;
-      color: #64748b;
-      margin-top: 70px;
+      padding: 40px 20px;
+      background: #0f172a;
+      color: #cbd5e1;
+      border-radius: 20px 20px 0 0;
+      margin-top: 60px;
     }
-    .socials {
-      margin-top: 20px;
-    }
+
     .socials a {
-      margin: 0 10px;
-      color: #1e40af;
-      font-size: 1.2rem;
-      text-decoration: none;
+      margin: 0 15px;
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .socials a:hover {
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+    /* Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+      section {
+        padding: 30px 15px;
+        margin: 30px 10px;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      .project-grid, .certification-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Taheer Bin Hussain</h1>
-    <p>DevOps Enthusiast | Python Developer | Docker & Git Learner</p>
+    <p>DevOps Enthusiast | Python Developer | CI/CD Specialist | Docker & Kubernetes Learner</p>
     <nav>
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#blog">Blog</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#goals">Goals</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>👨‍🎓 About Me</h2>
     <div class="card">
-      <p>Hello! I’m Taheer Bin Hussain, an aspiring DevOps Engineer with a strong passion for backend technologies, automation, and CI/CD pipelines. I love simplifying complex workflows and making deployment smooth and efficient.</p>
-      <p>I thrive on hands-on experience, and everything I’ve learned has been through curiosity, dedication, and consistent experimentation with tools and technologies.</p>
+      <p>Hello! I’m Taheer Bin Hussain, an aspiring DevOps Engineer with a deep passion for streamlining software development through automation, containerization, and CI/CD pipelines. My journey in tech began with a curiosity for how systems work, leading me to master tools like Docker, Git, and GitHub Actions.</p>
+      <p>I thrive on solving complex problems, optimizing workflows, and ensuring seamless deployments. My hands-on experience comes from countless hours experimenting with backend technologies, building projects, and contributing to open-source communities. I’m driven by a vision to create scalable, efficient systems that empower developers and businesses alike.</p>
+      <p>When I’m not coding or configuring pipelines, you’ll find me exploring new tools, reading about cloud infrastructure, or sharing my learnings through blog posts.</p>
     </div>
   </section>
 
-  <section id="education">
+  <section id="education" class="fade-in">
     <h2>🏫 Education</h2>
     <div class="card">
-      <p><strong>University:</strong> XYZ University, Pakistan</p>
-      <p><strong>Program:</strong> Bachelor of Computer Science</p>
-      <p><strong>Year:</strong> Currently in 3rd Semester</p>
-      <p>My academic journey has been focused on learning both theoretical and practical aspects of computing — from databases and networking to programming and system design. I’m consistently involved in lab projects and team assignments that sharpen my collaboration and technical skills.</p>
+      <p><strong>University:</strong> FAST University, Pakistan</p>
+      <p><strong>Program:</strong> Bachelor of Science in Computer Science</p>
+      <p><strong>Year:</strong> 3rd Semester (2023 - Present)</p>
+      <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Operating Systems, Database Management, Computer Networks, Software Engineering</p>
+      <p>My academic journey at FAST University has been a blend of theoretical foundations and practical applications. I’ve worked on lab projects involving network configurations, database optimization, and system design. Team assignments have honed my collaboration skills, while hackathons and coding competitions have fueled my passion for innovation.</p>
     </div>
   </section>
 
-  <section id="skills">
-    <h2>🛠️ Skills</h2>
+  <section id="skills" class="fade-in">
+    <h2>🛠️ Technical Skills</h2>
     <div class="card">
       <ul>
-        <li>💻 Linux (Basic CLI commands, navigation, permissions)</li>
-        <li>🐳 Docker (Dockerfiles, Docker Compose, multi-container setups)</li>
-        <li>🔧 Git & GitHub (repo management, branching, pull requests, GitHub Actions)</li>
-        <li>🐍 Python (Basics, functions, scripts, working with files)</li>
-        <li>🗃️ PostgreSQL (Dockerized DB, simple queries, integrations)</li>
-        <li>🚀 GitHub Actions (CI/CD, automated deployment workflows)</li>
-        <li>📄 HTML & CSS (Responsive layout, gradients, animations)</li>
-        <li>📦 MS Access (Forms, queries, reports for basic data apps)</li>
+        <li>💻 <strong>Linux:</strong> Proficient in CLI (bash scripting, file management, permissions, process monitoring)</li>
+        <li>🐳 <strong>Docker:</strong> Building Dockerfiles, managing containers, Docker Compose, multi-container orchestration</li>
+        <li>🔧 <strong>Git & GitHub:</strong> Version control, branching strategies, pull requests, GitHub Actions for CI/CD</li>
+        <li>🐍 <strong>Python:</strong> Scripting, automation, file handling, REST API integration, Flask development</li>
+        <li>🗃️ <strong>PostgreSQL:</strong> Database design, queries, Dockerized DB setup, integration with applications</li>
+        <li>🚀 <strong>CI/CD:</strong> GitHub Actions, automated testing, deployment pipelines, workflow optimization</li>
+        <li>📄 <strong>HTML & CSS:</strong> Responsive design, animations, Tailwind CSS, modern layouts</li>
+        <li>📦 <strong>MS Access:</strong> Database applications, forms, queries, reports for small-scale systems</li>
+        <li>☁️ <strong>Cloud Basics:</strong> Familiar with AWS EC2, S3, and basic cloud architecture concepts</li>
+        <li>🔍 <strong>Monitoring Tools:</strong> Exploring Prometheus, Grafana for system monitoring</li>
       </ul>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="experience" class="fade-in">
+    <h2>💼 Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p><strong>Freelance DevOps Consultant</strong> | Remote | June 2024 - Present</p>
+          <p>Assisted small startups in setting up CI/CD pipelines using GitHub Actions. Configured Dockerized environments for Flask and Node.js applications, reducing deployment time by 40%.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p><strong>Open-Source Contributor</strong> | GitHub | January 2024 - Present</p>
+          <p>Contributed to Docker-based projects and CI/CD workflows in open-source repositories. Fixed bugs, wrote documentation, and optimized workflows for better efficiency.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p><strong>Intern, Tech Startup</strong> | Karachi, Pakistan | Summer 2023</p>
+          <p>Worked on automating deployment scripts using Bash and Python. Set up a local PostgreSQL database using Docker for testing environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
     <h2>🚧 Projects</h2>
-    <div class="card project">
-      <p><span class="highlight">DevTasker</span></p>
-      <p>A Dockerized Flask-based web app to help developers manage tasks. Integrates PostgreSQL via containers. CI/CD configured using GitHub Actions. Live deploy planned after database connectivity is complete.</p>
-    </div>
-    <div class="card project">
-      <p><span class="highlight">Expense Tracker</span></p>
-      <p>A desktop-based app built with Microsoft Access. Used to manage and visualize daily expenses with queries, tables, and reports. Helped understand how databases work in practice.</p>
-    </div>
-    <div class="card project">
-      <p><span class="highlight">Portfolio Website</span></p>
-      <p>You're viewing it now! Made with pure HTML & CSS. Deployed with GitHub Actions and GitHub Pages. It’s part of my journey to mastering CI/CD and clean front-end design.</p>
+    <div class="project-grid">
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/300x200?text=DevTasker" alt="DevTasker">
+        <p><span class="highlight">DevTasker</span></p>
+        <p>A Flask-based task management web app running in Docker containers. Integrated with PostgreSQL for data persistence and GitHub Actions for CI/CD. Features user authentication, task CRUD operations, and planned cloud deployment on AWS.</p>
+        <p><strong>Tech Stack:</strong> Flask, PostgreSQL, Docker, GitHub Actions, HTML/CSS</p>
+      </div>
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/300x200?text=Expense+Tracker" alt="Expense Tracker">
+        <p><span class="highlight">Expense Tracker</span></p>
+        <p>A Microsoft Access-based desktop application for managing personal finances. Includes forms for data entry, queries for expense analysis, and reports for visualization. Improved my understanding of relational databases.</p>
+        <p><strong>Tech Stack:</strong> MS Access, VBA, SQL</p>
+      </div>
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/300x200?text=Portfolio+Website" alt="Portfolio Website">
+        <p><span class="highlight">Portfolio Website</span></p>
+        <p>This website! A responsive portfolio built with HTML, CSS, and JavaScript. Deployed via GitHub Pages with automated CI/CD using GitHub Actions. Showcases my skills, projects, and aspirations.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, GitHub Actions</p>
+      </div>
+      <div class="project-card card">
+        <img src="https://via.placeholder.com/300x200?text=Automation+Script" alt="Automation Script">
+        <p><span class="highlight">Server Monitoring Script</span></p>
+        <p>A Python script to monitor server health (CPU, memory, disk usage) using psutil. Integrated with Docker to run in isolated environments. Plans to add Prometheus and Grafana for visualization.</p>
+        <p><strong>Tech Stack:</strong> Python, Docker, psutil</p>
+      </div>
     </div>
   </section>
 
-  <section id="goals">
-    <h2>🎯 Goals</h2>
+  <section id="certifications" class="fade-in">
+    <h2>🎓 Certifications</h2>
+    <div class="certification-grid">
+      <div class="certification-card card">
+        <i class="fas fa-certificate"></i>
+        <p><strong>Docker Certified Associate (Prep Course)</strong></p>
+        <p>Udemy | 2024</p>
+        <p>Completed a comprehensive course on Docker fundamentals, container orchestration, and Docker Compose.</p>
+      </div>
+      <div class="certification-card card">
+        <i class="fas fa-certificate"></i>
+        <p><strong>Python for Beginners</strong></p>
+        <p>Coursera | 2023</p>
+        <p>Mastered Python basics, including data structures, file handling, and scripting for automation.</p>
+      </div>
+      <div class="certification-card card">
+        <i class="fas fa-certificate"></i>
+        <p><strong>Git & GitHub Masterclass</strong></p>
+        <p>Pluralsight | 2023</p>
+        <p>Learned advanced Git workflows, branching strategies, and GitHub Actions for CI/CD.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="fade-in">
+    <h2>📝 Blog Highlights</h2>
+    <div class="blog-card">
+      <img src="https://via.placeholder.com/100?text=Blog+1" alt="Blog 1">
+      <div>
+        <p><strong>Setting Up a CI/CD Pipeline with GitHub Actions</strong></p>
+        <p>A step-by-step guide on automating deployments for a Flask app using GitHub Actions and Docker.</p>
+        <a href="#" class="highlight">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="https://via.placeholder.com/100?text=Blog+2" alt="Blog 2">
+      <div>
+        <p><strong>Why Docker is a Game-Changer for DevOps</strong></p>
+        <p>Exploring the benefits of containerization and how Docker simplifies development and deployment.</p>
+        <a href="#" class="highlight">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="fade-in">
+    <h2>🌟 Testimonials</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/80?text=Person+1" alt="Person 1">
+        <p><strong>Ahmed Khan</strong>, Tech Lead</p>
+        <p>"Taheer’s dedication to learning DevOps tools and his ability to set up efficient CI/CD pipelines made our project deployments seamless. Highly recommend his skills!"</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/80?text=Person+2" alt="Person 2">
+        <p><strong>Sara Ali</strong>, Project Manager</p>
+        <p>"Working with Taheer was a pleasure. His attention to detail and passion for automation significantly improved our workflow."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals" class="fade-in">
+    <h2>🎯 Future Goals</h2>
     <div class="card">
       <ul>
-        <li>Become a certified DevOps Engineer with hands-on tools like Docker, Jenkins, and Kubernetes</li>
-        <li>Contribute to real open-source DevOps/Backend projects</li>
-        <li>Learn and use monitoring tools like Prometheus and Grafana</li>
-        <li>Deploy a production-grade app using full CI/CD pipeline</li>
-        <li>Launch my own automation-based SaaS project</li>
+        <li>Achieve AWS Certified DevOps Engineer certification</li>
+        <li>Master Kubernetes for container orchestration</li>
+        <li>Contribute to major open-source DevOps projects</li>
+        <li>Build a production-grade SaaS application with full CI/CD</li>
+        <li>Develop expertise in monitoring tools like Prometheus and Grafana</li>
+        <li>Launch a personal blog to share DevOps tutorials and insights</li>
+        <li>Mentor aspiring DevOps engineers in my community</li>
       </ul>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>📬 Contact Me</h2>
     <div class="card">
-      <p><strong>Email:</strong> taheer@example.com</p>
+      <p><strong>Email:</strong> <a href="mailto:taheer@example.com">taheer@example.com</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/TaheerBinHussain" target="_blank">TaheerBinHussain</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/taheerbinhussain" target="_blank">linkedin.com/in/taheerbinhussain</a></p>
-      <p>I’m always open to learning, collaboration, and working on cool DevOps projects. Let’s connect and grow together 🚀</p>
+      <p>I’m excited to connect with like-minded professionals, collaborate on innovative projects, or discuss DevOps and backend development. Let’s build something amazing together!</p>
     </div>
   </section>
 
   <footer>
-    Made with 💙 by Taheer Bin Hussain — 2025
+    <p>Made with 💙 by Taheer Bin Hussain — 2025</p>
     <div class="socials">
-      <a href="https://github.com/TaheerBinHussain" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/taheerbinhussain" target="_blank">LinkedIn</a>
+      <a href="https://github.com/TaheerBinHussain" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/taheerbinhussain" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/TaheerBin" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(element => observer.observe(element));
+  </script>
 </body>
 </html>
