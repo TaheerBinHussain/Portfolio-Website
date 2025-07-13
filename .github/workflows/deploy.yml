@@ -3,10 +3,10 @@ name: Deploy Portfolio Website
 on:
   push:
     branches:
-      - main  # Change to your default branch if it's not 'main'
+      - main  # or 'master', depending on your default branch
 
 permissions:
-  contents: write  # ✅ This gives the bot permission to push to your repo
+  contents: write  # Allows GitHub Actions to push to the repo
 
 jobs:
   build-and-deploy:
@@ -20,5 +20,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: C:\Users\Taheer Bin Hussain\Desktop\Portfolio-Website
-        publish_branch: gh-pages
+        publish_dir: ./  # This is fine since index.html is in the root
+        publish_branch: gh-pages  # Where the site will be deployed
