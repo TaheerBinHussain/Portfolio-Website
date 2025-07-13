@@ -106,7 +106,7 @@
       font-size: 4rem;
       font-weight: 800;
       background: linear-gradient(45deg, var(--accent-blue), var(--accent-cyan), var(--accent-purple));
-      background-size masy: 200% 200%;
+      background-size: 200% 200%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -390,6 +390,7 @@
     .skill-item:hover {
       color: var(--accent-blue);
       padding-left: 10px;
+      background: rgba(59, 130, 246, 0.05);
     }
 
     .skill-icon {
@@ -481,49 +482,6 @@
       transform: translateY(-2px);
     }
 
-    /* Timeline for Experience */
-    .timeline {
-      position: relative;
-      padding: 20px 0;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 20px;
-      top: 0;
-      height: 100%;
-      width: 4px;
-      background: var(--accent-green);
-      border-radius: 2px;
-    }
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 40px;
-      padding-left: 50px;
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: 14px;
-      top: 5px;
-      width: 16px;
-      height: 16px;
-      background: var(--accent-blue);
-      border-radius: 50%;
-      border: 3px solid var(--primary-dark);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .timeline-content {
-      background: var(--glass-bg);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-    }
-
     /* Certifications */
     .certification-grid {
       display: grid;
@@ -537,61 +495,18 @@
       background: var(--glass-bg);
       border-radius: 16px;
       border: 1px solid var(--glass-border);
+      transition: var(--transition);
+    }
+
+    .certification-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
 
     .certification-card i {
       font-size: 2.5rem;
       color: var(--accent-green);
       margin-bottom: 15px;
-    }
-
-    /* Blog Highlights */
-    .blog-card {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      padding: 20px;
-      background: var(--glass-bg);
-      border-radius: 10px;
-      border: 1px solid var(--glass-border);
-      margin-bottom: 20px;
-      transition: var(--transition);
-    }
-
-    .blog-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    }
-
-    .blog-card img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    /* Testimonials */
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .testimonial-card {
-      text-align: center;
-      padding: 20px;
-      background: var(--glass-bg);
-      border-radius: 10px;
-      border: 1px solid var(--glass-border);
-      box-shadow: var(--shadow);
-    }
-
-    .testimonial-card img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      object-fit: cover;
     }
 
     /* Contact */
@@ -768,8 +683,7 @@
 
       .stats-grid,
       .projects-grid,
-      .certification-grid,
-      .testimonial-grid {
+      .certification-grid {
         grid-template-columns: 1fr;
       }
 
@@ -797,11 +711,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#goals">Goals</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -811,7 +722,7 @@
     <div class="container">
       <div class="header-content">
         <h1 class="typing-animation">Taheer Bin Hussain</h1>
-        <p class="subtitle">DevOps Enthusiast | Python Developer | CI/CD Specialist | Docker & Kubernetes Learner</p>
+        <p class="subtitle">DevOps Enthusiast | Python Developer | CI/CD Specialist</p>
         <div class="cta-buttons">
           <a href="#projects" class="btn btn-primary"><span>🚀</span> View My Work</a>
           <a href="#contact" class="btn btn-secondary"><span>📧</span> Get In Touch</a>
@@ -825,26 +736,25 @@
       <h2 class="section-title animate-on-scroll">About Me</h2>
       <div class="about-content animate-on-scroll">
         <div class="about-text">
-          <p>Hello! I’m Taheer Bin Hussain, an aspiring DevOps Engineer with a passion for streamlining software development through automation, containerization, and CI/CD pipelines. My journey in tech began with a curiosity for how systems work, leading me to master tools like Docker, Git, and GitHub Actions.</p>
-          <p>I thrive on solving complex problems, optimizing workflows, and ensuring seamless deployments. My hands-on experience comes from countless hours experimenting with backend technologies, building projects, and contributing to open-source communities. I’m driven by a vision to create scalable, efficient systems that empower developers and businesses alike.</p>
-          <p>When I’m not coding or configuring pipelines, you’ll find me exploring new tools, reading about cloud infrastructure, or sharing my learnings through blog posts and community meetups.</p>
+          <p>Hi! I'm Taheer, a DevOps enthusiast at FAST University, passionate about automation and CI/CD pipelines. I love tinkering with Docker, Git, and Python to build efficient systems.</p>
+          <p>My projects focus on containerization and workflow optimization. When not coding, I'm exploring new DevOps tools or sharing insights with peers.</p>
         </div>
         <div class="stats-grid">
           <div class="stat-card glass">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">Projects Completed</div>
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Projects</div>
           </div>
           <div class="stat-card glass">
-            <div class="stat-number">3+</div>
+            <div class="stat-number">2+</div>
             <div class="stat-label">Years Learning</div>
           </div>
           <div class="stat-card glass">
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Technologies Mastered</div>
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Tech Skills</div>
           </div>
           <div class="stat-card glass">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Passion for DevOps</div>
+            <div class="stat-label">Passion</div>
           </div>
         </div>
       </div>
@@ -859,7 +769,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
           <div>
             <h4 style="color: var(--text-primary); margin-bottom: 10px;">University</h4>
-            <p style="color: var(--text-secondary);">XYZ University, Pakistan</p>
+            <p style="color: var(--text-secondary);">FAST University, Pakistan</p>
           </div>
           <div>
             <h4 style="color: var(--text-primary); margin-bottom: 10px;">Program</h4>
@@ -867,12 +777,9 @@
           </div>
           <div>
             <h4 style="color: var(--text-primary); margin-bottom: 10px;">Current Year</h4>
-            <p style="color: var(--text-secondary);">3rd Semester (2023 - Present)</p>
+            <p style="color: var(--text-secondary);">3rd Semester (2024 - Present)</p>
           </div>
         </div>
-        <p style="margin-top: 30px; color: var(--text-secondary); line-height: 1.6;">
-          My academic journey at XYZ University has been a blend of theoretical foundations and practical applications. I’ve worked on lab projects involving network configurations, database optimization, and system design. Team assignments and hackathons have honed my collaboration and problem-solving skills, fueling my passion for innovation in DevOps.
-        </p>
       </div>
     </div>
   </section>
@@ -884,63 +791,20 @@
         <div class="skill-category glass">
           <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
           <ul class="skill-list">
-            <li class="skill-item"><div class="skill-icon">🐳</div> Docker (Dockerfiles, Compose, Orchestration)</li>
-            <li class="skill-item"><div class="skill-icon">🔧</div> Git & GitHub (Version Control, CI/CD)</li>
-            <li class="skill-item"><div class="skill-icon">💻</div> Linux (CLI, Bash Scripting, Administration)</li>
-            <li class="skill-item"><div class="skill-icon">🚀</div> CI/CD Pipelines (GitHub Actions)</li>
-            <li class="skill-item"><div class="skill-icon">☁️</div> AWS Basics (EC2, S3)</li>
+            <li class="skill-item"><div class="skill-icon">🐳</div> Docker</li>
+            <li class="skill-item"><div class="skill-icon">🔧</div> Git & GitHub</li>
+            <li class="skill-item"><div class="skill-icon">💻</div> Linux CLI</li>
+            <li class="skill-item"><div class="skill-icon">🚀</div> CI/CD</li>
           </ul>
         </div>
         <div class="skill-category glass">
           <h3><i class="fas fa-code"></i> Programming</h3>
           <ul class="skill-list">
-            <li class="skill-item"><div class="skill-icon">🐍</div> Python (Scripting, Flask, Automation)</li>
-            <li class="skill-item"><div class="skill-icon">🌐</div> HTML & CSS (Responsive Design)</li>
-            <li class="skill-item"><div class="skill-icon">⚡</div> JavaScript (Basic Interactivity)</li>
+            <li class="skill-item"><div class="skill-icon">🐍</div> Python</li>
+            <li class="skill-item"><div class="skill-icon">🌐</div> HTML & CSS</li>
+            <li class="skill-item"><div class="skill-icon">⚡</div> Flask</li>
             <li class="skill-item"><div class="skill-icon">📜</div> Shell Scripting</li>
           </ul>
-        </div>
-        <div class="skill-category glass">
-          <h3><i class="fas fa-database"></i> Database & Storage</h3>
-          <ul class="skill-list">
-            <li class="skill-item"><div class="skill-icon">🐘</div> PostgreSQL (Queries, Integration)</li>
-            <li class="skill-item"><div class="skill-icon">📊</div> MS Access (Forms, Reports)</li>
-            <li class="skill-item"><div class="skill-icon">🔗</div> Database Design & Modeling</li>
-          </ul>
-        </div>
-        <div class="skill-category glass">
-          <h3><i class="fas fa-chart-line"></i> Monitoring & Analytics</h3>
-          <ul class="skill-list">
-            <li class="skill-item"><div class="skill-icon">🔍</div> Prometheus (Learning)</li>
-            <li class="skill-item"><div class="skill-icon">📈</div> Grafana (Learning)</li>
-            <li class="skill-item"><div class="skill-icon">📉</div> System Performance Monitoring</li>
-          </ul>
-        </div>
-      </ul>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="container">
-      <h2 class="section-title animate-on-scroll">Professional Experience</h2>
-      <div class="timeline animate-on-scroll">
-        <div class="timeline-item">
-          <div class="timeline-content glass">
-            <p><strong>Freelance DevOps Consultant</strong> | Remote | June 2024 - Present</p>
-            <p>Assisted startups in setting up CI/CD pipelines using GitHub Actions. Configured Dockerized environments for Flask and Node.js applications, reducing deployment time by 40%. Optimized workflows for scalability.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content glass">
-            <p><strong>Open-Source Contributor</strong> | GitHub | January 2024 - Present</p>
-            <p>Contributed to Docker-based projects and CI/CD workflows in open-source repositories. Fixed bugs, wrote documentation, and optimized automation scripts for better efficiency.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-content glass">
-            <p><strong>Intern, Tech Startup</strong> | Karachi, Pakistan | Summer 2023</p>
-            <p>Developed automation scripts using Bash and Python. Set up a local PostgreSQL database using Docker for testing environments, improving development efficiency by 30%.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -953,24 +817,23 @@
         <div class="project-card glass">
           <div class="project-header">
             <h3 class="project-title">DevTasker</h3>
-            <p class="project-description">A Flask-based task management web app running in Docker containers. Integrated with PostgreSQL for data persistence and GitHub Actions for CI/CD. Features user authentication and task CRUD operations.</p>
+            <p class="project-description">A Flask-based task manager in Docker with CI/CD via GitHub Actions.</p>
           </div>
           <div class="project-tech">
             <span class="tech-tag">Python</span>
             <span class="tech-tag">Flask</span>
             <span class="tech-tag">Docker</span>
-            <span class="tech-tag">PostgreSQL</span>
             <span class="tech-tag">GitHub Actions</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-link">🔗 Live Demo</a>
+            <a href="#" class="project-link">🔗 Demo</a>
             <a href="#" class="project-link">📱 GitHub</a>
           </div>
         </div>
         <div class="project-card glass">
           <div class="project-header">
             <h3 class="project-title">Expense Tracker</h3>
-            <p class="project-description">A desktop application built with Microsoft Access for managing personal finances. Includes forms for data entry, queries for expense analysis, and reports for visualization.</p>
+            <p class="project-description">A desktop app for managing finances with forms and reports.</p>
           </div>
           <div class="project-tech">
             <span class="tech-tag">MS Access</span>
@@ -985,7 +848,7 @@
         <div class="project-card glass">
           <div class="project-header">
             <h3 class="project-title">Portfolio Website</h3>
-            <p class="project-description">This responsive portfolio built with HTML, CSS, and JavaScript. Features glassmorphism design, animations, and automated deployment via GitHub Actions.</p>
+            <p class="project-description">This responsive portfolio with glassmorphism and CI/CD.</p>
           </div>
           <div class="project-tech">
             <span class="tech-tag">HTML5</span>
@@ -1000,8 +863,8 @@
         </div>
         <div class="project-card glass">
           <div class="project-header">
-            <h3 class="project-title">Server Monitoring Script</h3>
-            <p class="project-description">A Python script to monitor server health (CPU, memory, disk usage) using psutil. Integrated with Docker for isolated environments, with plans to add Prometheus and Grafana.</p>
+            <h3 class="project-title">Server Monitor</h3>
+            <p class="project-description">A Python script for server health monitoring in Docker.</p>
           </div>
           <div class="project-tech">
             <span class="tech-tag">Python</span>
@@ -1022,82 +885,13 @@
       <div class="certification-grid animate-on-scroll">
         <div class="certification-card glass">
           <i class="fas fa-certificate"></i>
-          <p><strong>Docker Certified Associate (Prep Course)</strong></p>
-          <p>Udemy | 2024</p>
-          <p>Comprehensive course on Docker fundamentals, container orchestration, and Docker Compose.</p>
+          <p><strong>Linux for Developers</strong></p>
+          <p>Coursera | 2025</p>
         </div>
         <div class="certification-card glass">
           <i class="fas fa-certificate"></i>
-          <p><strong>Python for Beginners</strong></p>
-          <p>Coursera | 2023</p>
-          <p>Mastered Python basics, including data structures, file handling, and automation scripting.</p>
-        </div>
-        <div class="certification-card glass">
-          <i class="fas fa-certificate"></i>
-          <p><strong>Git & GitHub Masterclass</strong></p>
-          <p>Pluralsight | 2023</p>
-          <p>Learned advanced Git workflows, branching strategies, and GitHub Actions for CI/CD.</p>
-        </div>
-        <div class="certification-card glass">
-          <i class="fas fa-certificate"></i>
-          <p><strong>AWS Cloud Practitioner (In Progress)</strong></p>
-          <p>Amazon Web Services | 2025</p>
-          <p>Learning cloud fundamentals, EC2, S3, and basic AWS architecture concepts.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog">
-    <div class="container">
-      <h2 class="section-title animate-on-scroll">Blog Highlights</h2>
-      <div class="animate-on-scroll">
-        <div class="blog-card glass">
-          <img src="https://via.placeholder.com/100?text=Blog+1" alt="Blog 1">
-          <div>
-            <p><strong>Setting Up a CI/CD Pipeline with GitHub Actions</strong></p>
-            <p>A step-by-step guide on automating deployments for a Flask app using GitHub Actions and Docker.</p>
-            <a href="#" class="project-link">Read More</a>
-          </div>
-        </div>
-        <div class="blog-card glass">
-          <img src="https://via.placeholder.com/100?text=Blog+2" alt="Blog 2">
-          <div>
-            <p><strong>Why Docker is a Game-Changer for DevOps</strong></p>
-            <p>Exploring the benefits of containerization and how Docker simplifies development and deployment.</p>
-            <a href="#" class="project-link">Read More</a>
-          </div>
-        </div>
-        <div class="blog-card glass">
-          <img src="https://via.placeholder.com/100?text=Blog+3" alt="Blog 3">
-          <div>
-            <p><strong>Scaling Applications with Kubernetes</strong></p>
-            <p>An introductory guide to container orchestration and my learning journey with Kubernetes.</p>
-            <a href="#" class="project-link">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <div class="container">
-      <h2 class="section-title animate-on-scroll">Testimonials</h2>
-      <div class="testimonial-grid animate-on-scroll">
-        <div class="testimonial-card glass">
-          <img src="https://via.placeholder.com/80?text=Ahmed" alt="Ahmed">
-          <p><strong>Ahmed Khan</strong>, Tech Lead</p>
-          <p>"Taheer’s dedication to learning DevOps tools and his ability to set up efficient CI/CD pipelines made our project deployments seamless. Highly recommend his skills!"</p>
-        </div>
-        <div class="testimonial-card glass">
-          <img src="https://via.placeholder.com/80?text=Sara" alt="Sara">
-          <p><strong>Sara Ali</strong>, Project Manager</p>
-          <p>"Working with Taheer was a pleasure. His attention to detail and passion for automation significantly improved our workflow."</p>
-        </div>
-        <div class="testimonial-card glass">
-          <img src="https://via.placeholder.com/80?text=Ali" alt="Ali">
-          <p><strong>Ali Raza</strong>, Developer</p>
-          <p>"Taheer’s expertise in Docker and GitHub Actions helped our team deploy faster and more reliably. He’s a true asset!"</p>
+          <p><strong>Introduction to DevSecOps</strong></p>
+          <p>Coursera | 2025</p>
         </div>
       </div>
     </div>
@@ -1108,13 +902,10 @@
       <h2 class="section-title animate-on-scroll">Future Goals</h2>
       <div class="card glass animate-on-scroll">
         <ul class="skill-list">
-          <li class="skill-item"><div class="skill-icon">🎓</div> Achieve AWS Certified DevOps Engineer certification</li>
-          <li class="skill-item"><div class="skill-icon">⚙️</div> Master Kubernetes for container orchestration</li>
-          <li class="skill-item"><div class="skill-icon">🌐</div> Contribute to major open-source DevOps projects</li>
-          <li class="skill-item"><div class="skill-icon">🚀</div> Build a production-grade SaaS with full CI/CD</li>
-          <li class="skill-item"><div class="skill-icon">📊</div> Develop expertise in Prometheus and Grafana</li>
-          <li class="skill-item"><div class="skill-icon">📝</div> Launch a DevOps blog with tutorials</li>
-          <li class="skill-item"><div class="skill-icon">🤝</div> Mentor aspiring DevOps engineers</li>
+          <li class="skill-item"><div class="skill-icon">🎓</div> Earn AWS DevOps Certification</li>
+          <li class="skill-item"><div class="skill-icon">⚙️</div> Master Kubernetes</li>
+          <li class="skill-item"><div class="skill-icon">🌐</div> Contribute to Open-Source</li>
+          <li class="skill-item"><div class="skill-icon">🚀</div> Build a SaaS App</li>
         </ul>
       </div>
     </div>
@@ -1129,7 +920,7 @@
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
             <div>
               <h4>Email</h4>
-              <p><a href="mailto:taheer@example.com" style="color: var(--accent-blue); text-decoration: none;">taheer@example.com</a></p>
+              <p><a href="mailto:taheerbinhussain@gmail.com" style="color: var(--accent-blue); text-decoration: none;">taheerbinhussain@gmail.com</a></p>
             </div>
           </div>
           <div class="contact-item">
@@ -1143,7 +934,7 @@
             <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
             <div>
               <h4>LinkedIn</h4>
-              <p><a href="https://linkedin.com/in/taheerbinhussain" target="_blank" style="color: var(--accent-blue); text-decoration: none;">linkedin.com/in/taheerbinhussain</a></p>
+              <p><a href="https://www.linkedin.com/in/taheer-bin-hussain-1a5714327/" target="_blank" style="color: var(--accent-blue); text-decoration: none;">linkedin.com/in/taheerbinhussain</a></p>
             </div>
           </div>
         </div>
@@ -1160,7 +951,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" onclick="submitForm()">Send Message <i class="fas fa-paper-plane"></i></button>
+          <button type="submit" class="btn btn-primary" onclick="submitForm()">Send <i class="fas fa-paper-plane"></i></button>
         </div>
       </div>
     </div>
@@ -1171,7 +962,7 @@
       <p>Made with 💙 by Taheer Bin Hussain — 2025</p>
       <div class="social-links">
         <a href="https://github.com/TaheerBinHussain" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/taheerbinhussain" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/taheer-bin-hussain-1a5714327/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
         <a href="https://twitter.com/TaheerBin" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
@@ -1209,12 +1000,12 @@
       const email = document.getElementById('email').value;
       const message = document.getElementById('message').value;
       if (name && email && message) {
-        alert('Thank you for your message! I will get back to you soon.');
+        alert('Thanks for your message! I’ll respond soon.');
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('message').value = '';
       } else {
-        alert('Please fill out all fields.');
+        alert('Please fill all fields.');
       }
     }
   </script>
