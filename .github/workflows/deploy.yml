@@ -20,5 +20,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
+        publish_dir: C:\Users\Taheer Bin Hussain\Desktop\Portfolio-Website
         publish_branch: gh-pages
