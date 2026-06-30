@@ -43,6 +43,12 @@ body{
     linear-gradient(var(--line) 1.5px, transparent 1.5px),
     linear-gradient(90deg, var(--line) 1.5px, transparent 1.5px);
   background-size: 56px 56px;
+  position:relative;
+}
+body::after{
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:2;
+  opacity:0.025; mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.01em;}
 .mono{font-family:'JetBrains Mono',monospace;}
@@ -89,6 +95,13 @@ header{
   min-height:100vh; display:flex; align-items:center;
   padding:140px 0 80px; position:relative; overflow:hidden;
 }
+header::before{
+  content:''; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(620px circle at 12% 18%, rgba(30,70,144,0.10), transparent 65%),
+    radial-gradient(560px circle at 88% 78%, rgba(184,101,14,0.09), transparent 65%),
+    radial-gradient(420px circle at 70% 15%, rgba(20,112,76,0.07), transparent 60%);
+}
 .hero-watermark{
   position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
   font-family:'Space Grotesk',sans-serif; font-weight:700;
@@ -115,6 +128,15 @@ header{
 #typedLine{min-height:1.1em; display:inline-block; font-weight:700;}
 #typedLine .caret{display:inline-block; width:2px; height:0.95em; background:var(--blue); margin-left:2px; vertical-align:-2px; animation:caretBlink 1s step-end infinite;}
 @keyframes caretBlink{ 0%,100%{opacity:1;} 50%{opacity:0;} }
+
+.hero-eyebrow-row{display:flex; align-items:center; gap:14px; margin-bottom:20px;}
+.avatar-badge{
+  width:44px; height:44px; border-radius:50%; flex:0 0 auto;
+  background:linear-gradient(135deg, var(--blue), var(--green));
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Space Grotesk',sans-serif; font-weight:700; color:#fff; font-size:0.92rem;
+  border:2px solid var(--ink); box-shadow:3px 3px 0 var(--amber);
+}
 
 .particle-field{position:fixed; inset:0; z-index:-1; pointer-events:none; overflow:hidden;}
 .particle{position:absolute; border-radius:50%; opacity:0; animation:floatUp linear infinite;}
@@ -148,7 +170,7 @@ header{
   display:inline-flex; align-items:center; gap:10px; transition:var(--transition); cursor:pointer; border:2px solid transparent;
   font-family:'JetBrains Mono',monospace;
 }
-.btn-primary{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+.btn-primary{background:linear-gradient(135deg, var(--ink) 0%, #1E4690 130%); color:var(--paper); border-color:var(--ink);}
 .btn-primary:hover{background:var(--blue); border-color:var(--blue); transform:translate(-3px,-3px); box-shadow:6px 6px 0 var(--ink);}
 .btn-secondary{background:transparent; border-color:var(--ink); color:var(--ink);}
 .btn-secondary:hover{transform:translate(-3px,-3px); box-shadow:6px 6px 0 var(--line-strong);}
@@ -157,7 +179,7 @@ header{
 .hero-diagram{position:relative;}
 .term-window{
   background:#11161F; border-radius:10px; overflow:hidden;
-  box-shadow:10px 10px 0 var(--blue), 0 30px 60px rgba(17,22,31,0.35);
+  box-shadow:10px 10px 0 var(--blue), 0 30px 70px rgba(30,70,144,0.28), 0 0 0 1px rgba(255,255,255,0.04);
   border:2px solid var(--ink);
   transform:rotate(-1deg);
   transition:transform 0.4s ease;
@@ -235,7 +257,13 @@ section{padding:110px 0; position:relative; border-bottom:2px solid var(--ink); 
   transition:opacity 0.3s ease;
 }
 .card:hover::before{opacity:1;}
-.card:hover{transform:translate(-4px,-4px); box-shadow:7px 7px 0 var(--blue);}
+.card:hover{
+  transform:translate(-4px,-4px);
+  box-shadow:
+    3px 3px 0 var(--blue),
+    7px 7px 0 var(--blue),
+    7px 7px 22px rgba(30,70,144,0.22);
+}
 
 /* ===== ABOUT ===== */
 .about-grid{display:grid; grid-template-columns:1.2fr 1fr; gap:50px; align-items:start;}
@@ -274,8 +302,12 @@ section{padding:110px 0; position:relative; border-bottom:2px solid var(--ink); 
 .tag:hover{background:var(--blue-dim); color:var(--blue); border-color:var(--blue);}
 
 /* ===== PROJECTS ===== */
-.projects-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:24px;}
+.projects-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;}
 .project-card{overflow:hidden;}
+.project-card.featured{grid-column:1 / -1;}
+.project-card.featured .project-body{padding:30px 28px 10px;}
+.project-card.featured .project-title{font-size:1.4rem;}
+.project-card.featured .project-desc{max-width:760px;}
 .project-bar{display:flex; align-items:center; justify-content:space-between; padding:11px 20px; background:var(--paper-2); border-bottom:1px solid var(--line-strong);}
 .project-bar .path{font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--ink-faint);}
 .badge-pass{display:flex; align-items:center; gap:5px; font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--green); background:var(--green-dim); padding:3px 9px; border-radius:2px; font-weight:700;}
@@ -408,17 +440,13 @@ footer p{color:var(--ink-faint); font-size:0.82rem; font-family:'JetBrains Mono'
   <div class="container">
     <div class="hero-grid">
       <div>
-        <p class="spec-label mono">FIG. 01 — PROFILE SHEET</p>
-        <p class="spec-label mono" id="typedLine" style="color:var(--blue); font-size:0.8rem; margin-bottom:14px;"></p>
+        <div class="hero-eyebrow-row">
+          <div class="avatar-badge">TBH</div>
+          <p class="spec-label mono" id="typedLine" style="color:var(--blue); font-size:0.82rem; margin:0;"></p>
+        </div>
         <h1 class="hero-title">Taheer Bin<br><span class="accent">Hussain</span></h1>
         <p class="hero-role">Cloud &amp; DevOps Engineer <span class="sep">/</span> CI/CD <span class="sep">/</span> Containers <span class="sep">/</span> Cloud Infra</p>
-        <p class="hero-sub">Third-year CS undergrad at NUCES building production-grade pipelines, container platforms, and observability stacks — while finishing a degree with honors.</p>
-        <div class="status-row">
-          <div class="status-chip"><span class="dot"></span> build: passing</div>
-          <div class="status-chip"><span class="dot"></span> scan: clean</div>
-          <div class="status-chip"><span class="dot"></span> deploy: ready</div>
-          <div class="status-chip"><span class="dot"></span> dean's list: ✓</div>
-        </div>
+        <p class="hero-sub">Third-year CS undergrad at NUCES building production-grade pipelines, container platforms, and observability stacks.</p>
         <div class="cta-row">
           <a href="#projects" class="btn btn-primary"><i class="fas fa-terminal"></i> View Projects</a>
           <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
@@ -555,7 +583,7 @@ footer p{color:var(--ink-faint); font-size:0.82rem; font-family:'JetBrains Mono'
     </div>
     <div class="projects-grid animate-on-scroll stagger">
 
-      <div class="card project-card">
+      <div class="card project-card featured">
         <div class="project-bar"><span class="path mono">~/projects/netflix-clone-cicd</span><span class="badge-pass"><span class="dot"></span>passing</span></div>
         <div class="project-body">
           <h3 class="project-title">DevSecOps CI/CD Pipeline — Netflix Clone</h3>
