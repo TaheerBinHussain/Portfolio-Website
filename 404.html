@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Taheer Bin Hussain</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#161616">
+<link rel="icon" href="/Portfolio-Website/assets/favicon.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Gravity"; src: url("/Portfolio-Website/assets/fonts/anton-latin-400-normal.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Grotesk"; src: url("/Portfolio-Website/assets/fonts/geist-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "Plex Mono"; src: url("/Portfolio-Website/assets/fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; display: grid; place-items: center; padding: 24px;
+    background: radial-gradient(60% 50% at 50% 55%, rgba(255, 100, 54, 0.22), transparent), #161616;
+    color: #f1f0ef; font-family: "Grotesk", system-ui, sans-serif; text-align: center;
+  }
+  main { display: grid; gap: 28px; justify-items: center; }
+  .label { font: 500 13px/1 "Plex Mono", monospace; text-transform: uppercase; letter-spacing: 0.04em; color: #ff6436; }
+  h1 {
+    margin: 0; font-family: "Gravity", Impact, sans-serif; font-weight: 400; text-transform: uppercase;
+    font-size: clamp(120px, 30vw, 320px); line-height: 0.8;
+    background: linear-gradient(180deg, #f4f2f1 0%, #bdb9b8 50%, #ff6436 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+    padding-top: 0.04em;
+  }
+  p { margin: 0; max-width: 34ch; font-size: 20px; line-height: 1.45; color: #c4c0bf; }
+  a {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 9999px;
+    background: #ff6436; color: #161616; text-decoration: none;
+    font: 600 13px/1 "Plex Mono", monospace; text-transform: uppercase; letter-spacing: 0.03em;
+    transition: transform .3s cubic-bezier(0.32, 0.72, 0, 1), background-color .3s;
+  }
+  a:hover { background: #f1f0ef; transform: translateY(-2px); }
+  a:focus-visible { outline: 2px solid #f1f0ef; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="label">Error 404</p>
+  <h1>Lost</h1>
+  <p>This page is not deployed anywhere. The rest of the cluster is healthy, though.</p>
+  <a href="/Portfolio-Website/">Back to the portfolio</a>
+</main>
+</body>
+</html>

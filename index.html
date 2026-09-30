@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taheer Bin Hussain | Cloud-native systems, DevOps, agentic AI</title>
+<meta name="description" content="Taheer Bin Hussain is a Computer Science student at FAST-NUCES building cloud-native infrastructure, DevOps pipelines, and agentic AI systems on Kubernetes, AWS, and Azure.">
+<meta name="author" content="Taheer Bin Hussain">
+<meta name="theme-color" content="#161616">
+<link rel="canonical" href="https://taheerbinhussain.github.io/Portfolio-Website/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Taheer Bin Hussain | Cloud-native systems, DevOps, agentic AI">
+<meta property="og:description" content="CS student at FAST-NUCES. Kubernetes AI platforms, multi-agent systems, Azure deployments, and independent research on predictive autoscaling.">
+<meta property="og:image" content="https://taheerbinhussain.github.io/Portfolio-Website/assets/og-image.jpg">
+<meta property="og:url" content="https://taheerbinhussain.github.io/Portfolio-Website/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Taheer Bin Hussain | Cloud-native systems, DevOps, agentic AI">
+<meta name="twitter:image" content="https://taheerbinhussain.github.io/Portfolio-Website/assets/og-image.jpg">
+
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Taheer Bin Hussain",
+  "email": "mailto:taheerbinhussain@gmail.com",
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "National University of Computer and Emerging Sciences (FAST-NUCES)"},
+  "knowsAbout": ["Kubernetes", "DevOps", "Cloud-native systems", "Agentic AI", "AWS", "Azure", "Terraform"],
+  "sameAs": ["https://github.com/TaheerBinHussain", "https://www.linkedin.com/in/taheer-bin-hussain-1a5714327/"]
+}
+</script>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 16 16"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.18 0h13.64C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.18 1.15H1.18C.52 16 0 15.48 0 14.85V1.15Zm4.94 12.24V6.17H2.54v7.22h2.4Zm-1.2-8.2c.84 0 1.36-.56 1.36-1.26-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.26 1.33 1.26h.01Zm4.9 8.2V9.36c0-.22.02-.43.08-.59.18-.43.57-.88 1.23-.88.87 0 1.21.66 1.21 1.63v3.87h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.27 0-1.84.7-2.16 1.19v.03h-.02l.02-.03V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M8.5 8.5h11v11h-11zM15.5 8.5v-4h-11v11h4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13ZM15.5 15.5 20 20"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19 5v7a3 3 0 0 1-3 3H6m0 0 4-4m-4 4 4 4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Taheer Bin Hussain, back to top">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name">Taheer B. Hussain</span>
+    </a>
+    <button class="cmdk-btn" type="button" aria-haspopup="dialog" aria-controls="palette" aria-label="Jump to a section, project or action" aria-keyshortcuts="Control+K Meta+K /">
+      <svg aria-hidden="true"><use href="#i-search"/></svg><span class="cmdk-label">Jump to</span><kbd class="cmdk-key">Ctrl K</kbd>
+    </button>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg aria-hidden="true"><use href="#i-menu"/></svg><span class="sr">Open menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Sections">
+      <span class="nav-ind" aria-hidden="true"></span>
+      <a href="#work"><span aria-hidden="true">+</span> Work</a>
+      <a href="#research"><span aria-hidden="true">+</span> Research</a>
+      <a href="#experience"><span aria-hidden="true">+</span> Experience</a>
+      <a href="#projects"><span aria-hidden="true">+</span> Projects</a>
+      <a href="#stack"><span aria-hidden="true">+</span> Stack</a>
+      <a href="#education"><span aria-hidden="true">+</span> Education</a>
+      <a href="#contact" class="nav-cta magnetic" data-magnet="0.25"><span class="dot" aria-hidden="true"></span> Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <h1 id="hero-title" class="monument">
+    <span class="sr">Taheer Bin Hussain: from code to cluster</span>
+    <span class="m-line m-line-1" aria-hidden="true"><span>From code</span></span>
+    <span class="m-line m-line-2" aria-hidden="true"><span>to cluster</span></span>
+  </h1>
+
+  <div class="hero-stage">
+    <div class="hero-meta hero-meta-left">
+      <p class="meta-label">Portfolio of</p>
+      <p class="meta-name">Taheer<br>Bin Hussain</p>
+      <p class="meta-sub">CS student, FAST-NUCES<br>Faisalabad, PK <time class="clock" data-tz="Asia/Karachi">--:--</time> PKT</p>
+    </div>
+
+    <div class="monitor" aria-labelledby="stack-title">
+      <div class="monitor-tilt">
+      <div class="monitor-screen">
+        <div class="stackviz">
+          <div class="stackviz-head">
+            <h2 id="stack-title">Where my work sits</h2>
+            <p>Pick a layer</p>
+          </div>
+          <ol class="layers" role="list">
+            <li><button type="button" class="layer" data-layer="agents" aria-controls="layer-panel" aria-pressed="true">AI agents<span class="sr">, 3 projects</span></button></li>
+            <li><button type="button" class="layer" data-layer="apps" aria-controls="layer-panel" aria-pressed="false">Apps &amp; APIs<span class="sr">, 3 projects</span></button></li>
+            <li><button type="button" class="layer" data-layer="containers" aria-controls="layer-panel" aria-pressed="false">Containers<span class="sr">, 5 projects</span></button></li>
+            <li><button type="button" class="layer" data-layer="k8s" aria-controls="layer-panel" aria-pressed="false">Kubernetes<span class="sr">, 5 projects</span></button></li>
+            <li><button type="button" class="layer" data-layer="cloud" aria-controls="layer-panel" aria-pressed="false">Cloud<span class="sr">, 3 projects</span></button></li>
+            <li><button type="button" class="layer" data-layer="obs" aria-controls="layer-panel" aria-pressed="false">Observability<span class="sr">, 4 projects</span></button></li>
+          </ol>
+          <div id="layer-panel" class="layer-panel" aria-live="polite">
+            <div class="layer-detail" data-for="agents">
+              <p class="layer-tools">OpenAI Agents SDK, CrewAI, Pydantic AI, Agno, LangGraph, A2A, Aider, Ollama</p>
+              <ul><li><a href="#p-agents">Autonomous AI development team</a></li><li><a href="#p-hr">Autonomous HR &amp; operations platform</a></li><li><a href="#p-repo">Repo Assistant</a></li></ul>
+            </div>
+            <div class="layer-detail" data-for="apps" hidden>
+              <p class="layer-tools">FastAPI, async Python, SQLModel, PostgreSQL, Redis, Next.js, Supabase</p>
+              <ul><li><a href="#p-backend">Production AI backend</a></li><li><a href="#p-hr">Autonomous HR &amp; operations platform</a></li><li><a href="#s-careeros">CareerOS (in progress)</a></li></ul>
+            </div>
+            <div class="layer-detail" data-for="containers" hidden>
+              <p class="layer-tools">Docker, Docker Compose, GHCR, Trivy image scanning</p>
+              <ul><li><a href="#p-backend">Production AI backend</a></li><li><a href="#p-hr">Autonomous HR &amp; operations platform</a></li><li><a href="#p-azure">Azure cloud &amp; disaster recovery</a></li><li><a href="#s-netflix">Netflix clone DevSecOps pipeline</a></li><li><a href="#s-chat">Chat application on Kubernetes</a></li></ul>
+            </div>
+            <div class="layer-detail" data-for="k8s" hidden>
+              <p class="layer-tools">Kubernetes, Helm, ArgoCD, AWS EKS, HPA</p>
+              <ul><li><a href="#p-platform">Sovereign AI platform</a></li><li><a href="#research">Predictive autoscaling research</a></li><li><a href="#s-voting">Voting app observability</a></li><li><a href="#s-chat">Chat application on Kubernetes</a></li><li><a href="#s-tictactoe">Tic-Tac-Toe on EKS</a></li></ul>
+            </div>
+            <div class="layer-detail" data-for="cloud" hidden>
+              <p class="layer-tools">Azure Container Apps, AWS EC2, AWS EKS, Terraform, GitHub Actions</p>
+              <ul><li><a href="#p-azure">Azure cloud &amp; disaster recovery</a></li><li><a href="#s-netflix">Netflix clone on EC2</a></li><li><a href="#s-tictactoe">Tic-Tac-Toe on EKS</a></li></ul>
+            </div>
+            <div class="layer-detail" data-for="obs" hidden>
+              <p class="layer-tools">Prometheus, Grafana, Application Insights, Azure Monitor, structured logging</p>
+              <ul><li><a href="#p-platform">Sovereign AI platform</a></li><li><a href="#p-azure">Azure cloud &amp; disaster recovery</a></li><li><a href="#research">Predictive autoscaling research</a></li><li><a href="#s-voting">Voting app observability</a></li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="screen-fx" aria-hidden="true">
+          <svg class="screen-cursor" viewBox="0 0 24 24"><path d="M4 2.5v17.2l4.7-4.4 3 6.9 3.1-1.4-3-6.8 6.5-.4L4 2.5Z"/></svg>
+          <span class="click-ring"></span>
+        </div>
+        <div class="screen-power" aria-hidden="true"></div>
+      </div>
+      <div class="monitor-neck" aria-hidden="true"></div>
+      <div class="monitor-base" aria-hidden="true"></div>
+      <div class="desk-mouse" aria-hidden="true">
+        <span class="mouse-shadow"></span>
+        <div class="mouse-move">
+          <div class="mouse-body">
+            <span class="mouse-btn mouse-btn-l"></span>
+            <span class="mouse-btn mouse-btn-r"></span>
+            <span class="mouse-wheel"></span>
+            <span class="mouse-led"></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="hero-meta hero-meta-right">
+      <p class="meta-label">What I do</p>
+      <p class="meta-copy">I build the path software takes to production: AI agents, the clusters they run on, and the cloud they ship to.</p>
+      <a class="pill meta-cta magnetic" href="#work">See the work<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro" aria-labelledby="intro-title">
+  <div class="wrap intro-grid">
+    <picture class="portrait reveal">
+      <source srcset="assets/taheer-240.webp 1x, assets/taheer-480.webp 2x" type="image/webp">
+      <img src="assets/taheer-240.jpg" srcset="assets/taheer-480.jpg 2x" width="240" height="240" alt="Portrait of Taheer Bin Hussain" loading="lazy">
+    </picture>
+    <div class="intro-copy">
+      <h2 id="intro-title" class="sr">About</h2>
+      <p class="statement reveal">Computer Science student building cloud-native systems, DevOps pipelines and agentic AI. I work on the full path to production: <em>AI agents</em> and the backends they call, the <em>containers and Kubernetes clusters</em> they run on, the <em>cloud</em> they deploy to, and the <em>monitoring</em> that tells you whether any of it is working.</p>
+      <p class="availability reveal"><span class="live-dot" aria-hidden="true"></span>Open to internships, research collaborations and freelance infrastructure work</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <ul class="logo-strip reveal" aria-label="Where I have worked and studied">
+      <li>Digitalsofts</li>
+      <li>Davine Technologies</li>
+      <li>FAST-NUCES</li>
+      <li class="strip-aws"><img src="assets/logos/aws.svg" alt="" width="44" height="44" loading="lazy"><span>Certified SA</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ STACK BAND ============ -->
+<div class="band" aria-hidden="true">
+  <div class="band-track">
+    <span>Kubernetes</span><span>Terraform</span><span>Azure</span><span>AWS</span><span>ArgoCD</span><span>Docker</span><span>LangGraph</span><span>FastAPI</span><span>Prometheus</span><span>Grafana</span><span>CrewAI</span><span>GitHub Actions</span>
+    <span>Kubernetes</span><span>Terraform</span><span>Azure</span><span>AWS</span><span>ArgoCD</span><span>Docker</span><span>LangGraph</span><span>FastAPI</span><span>Prometheus</span><span>Grafana</span><span>CrewAI</span><span>GitHub Actions</span>
+  </div>
+</div>
+
+<!-- ============ FEATURED WORK ============ -->
+<section class="section work" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="work-title" class="h-section reveal">Internship work at Digitalsofts</h2>
+      <p class="lede reveal">Six projects built during my Cloud &amp; DevOps internship (July to September 2026), under Tariq Mahmood, VP &amp; CTO. Each one sits a layer further along: from a tool that reads code, to agents that write it, to the cloud that runs it.</p>
+    </div>
+
+    <div class="explorer">
+      <div class="track" role="tablist" aria-label="Internship projects" aria-orientation="vertical">
+        <button role="tab" id="tab-repo" aria-controls="p-repo" class="track-item" aria-selected="true"><span class="track-step">01</span><span class="track-text"><span class="track-kind">Developer tooling</span><span class="track-name">Repo Assistant</span></span></button>
+        <button role="tab" id="tab-backend" aria-controls="p-backend" class="track-item" aria-selected="false"><span class="track-step">02</span><span class="track-text"><span class="track-kind">Production backend</span><span class="track-name">AI Backend Core</span></span></button>
+        <button role="tab" id="tab-agents" aria-controls="p-agents" class="track-item" aria-selected="false"><span class="track-step">03</span><span class="track-text"><span class="track-kind">Agentic systems</span><span class="track-name">Autonomous AI dev team</span></span></button>
+        <button role="tab" id="tab-platform" aria-controls="p-platform" class="track-item" aria-selected="false"><span class="track-step">04</span><span class="track-text"><span class="track-kind">AI infrastructure</span><span class="track-name">Sovereign AI platform</span></span></button>
+        <button role="tab" id="tab-hr" aria-controls="p-hr" class="track-item" aria-selected="false"><span class="track-step">05</span><span class="track-text"><span class="track-kind">Autonomous enterprise systems</span><span class="track-name">HR &amp; operations platform</span></span></button>
+        <button role="tab" id="tab-azure" aria-controls="p-azure" class="track-item" aria-selected="false"><span class="track-step">06</span><span class="track-text"><span class="track-kind">Cloud deployment &amp; recovery</span><span class="track-name">Azure cloud &amp; DR</span></span></button>
+      </div>
+
+      <div class="panels">
+        <div class="case spot" id="p-repo" role="tabpanel" aria-labelledby="tab-repo">
+          <header class="case-head">
+            <p class="case-kind">Developer tooling</p>
+            <h3>Repo Assistant</h3>
+            <p class="case-sum">A command-line tool that reads a codebase and explains it back: structure, size, and what to improve. It runs Aider against a local Ollama model, so the code never leaves the machine.</p>
+          </header>
+          <ol class="flow" aria-label="How it works">
+            <li class="node">Codebase</li>
+            <li class="node">Scanner<small>line counts, structure</small></li>
+            <li class="node node-ai">Aider + local Ollama model</li>
+            <li class="node">Summary &amp; suggestions</li>
+          </ol>
+          <div class="case-body">
+            <div>
+              <h4>What it does</h4>
+              <ul class="ticks"><li>Scans a repository and counts lines per file</li><li>Analyzes the repository structure</li><li>Generates an AI summary of the codebase</li><li>Suggests improvements</li></ul>
+            </div>
+            <div>
+              <h4>Result</h4>
+              <p>Run against one of my own projects, it correctly identified the architecture and suggested adding rate limiting.</p>
+            </div>
+          </div>
+          <footer class="case-foot">
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>Aider</li><li>Ollama</li><li>CLI</li></ul>
+            <a class="pill-link" href="https://github.com/TaheerBinHussain/repo-assistant" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>repo-assistant<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </footer>
+        </div>
+
+        <div class="case spot" id="p-backend" role="tabpanel" aria-labelledby="tab-backend">
+          <header class="case-head">
+            <p class="case-kind">Production backend</p>
+            <h3>AI Backend Core</h3>
+            <p class="case-sum">A production-oriented FastAPI backend with the parts real services need and demos usually skip: auth, roles, audit trails, rate limits, caching, background jobs and health checks, all tested and containerized.</p>
+          </header>
+          <ol class="flow" aria-label="How it is put together">
+            <li class="node">Client</li>
+            <li class="node">FastAPI<small>JWT, RBAC, rate limits</small></li>
+            <li class="node">Redis<small>cache, background jobs</small></li>
+            <li class="node">PostgreSQL<small>via SQLModel</small></li>
+          </ol>
+          <div class="case-body">
+            <div>
+              <h4>Security &amp; access</h4>
+              <ul class="ticks"><li>JWT authentication</li><li>Role-based access control</li><li>Audit logs</li><li>Rate limiting</li></ul>
+            </div>
+            <div>
+              <h4>Operations</h4>
+              <ul class="ticks"><li>Health checks, structured logging and metrics</li><li>Caching and background jobs</li><li>OpenAPI docs</li><li>Docker, automated tests and CI</li></ul>
+            </div>
+          </div>
+          <footer class="case-foot">
+            <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>Async Python</li><li>SQLModel</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>CI</li></ul>
+            <a class="pill-link" href="https://github.com/TaheerBinHussain/AI_Backend_Core" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>AI_Backend_Core<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </footer>
+        </div>
+
+        <div class="case spot" id="p-agents" role="tabpanel" aria-labelledby="tab-agents">
+          <header class="case-head">
+            <p class="case-kind">Agentic systems</p>
+            <h3>Autonomous AI development team</h3>
+            <p class="case-sum">Nine specialized agents that turn a feature request written in plain language into a tested implementation. The agents are built on five different frameworks and talk to each other over the Agent-to-Agent (A2A) protocol.</p>
+          </header>
+          <ol class="flow" aria-label="How it works">
+            <li class="node">Feature request</li>
+            <li class="node node-ai">9 agents over A2A</li>
+            <li class="node">Engineer ⇄ Reviewer<small>negotiation loop</small></li>
+            <li class="node">QA tests &amp; sandbox preview</li>
+            <li class="node">Docker &amp; GitHub CI/CD</li>
+          </ol>
+          <div class="case-body">
+            <div>
+              <h4>Frameworks, side by side</h4>
+              <p>OpenAI Agents SDK, CrewAI, Pydantic AI, Agno and LangGraph, each running agents in the same system and interoperating through A2A.</p>
+            </div>
+            <div>
+              <h4>What the pipeline includes</h4>
+              <ul class="ticks"><li>Automated QA and test generation</li><li>Engineer-Reviewer negotiation loops</li><li>Execution tracing</li><li>Live sandbox previews</li><li>Docker deployment with GitHub CI/CD</li></ul>
+            </div>
+          </div>
+          <footer class="case-foot">
+            <ul class="tags" aria-label="Technologies"><li>OpenAI Agents SDK</li><li>CrewAI</li><li>Pydantic AI</li><li>Agno</li><li>LangGraph</li><li>A2A</li><li>Docker</li></ul>
+            <a class="pill-link" href="https://github.com/TaheerBinHussain/autonomous-ai-dev-team" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>autonomous-ai-dev-team<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </footer>
+        </div>
+
+        <div class="case spot" id="p-platform" role="tabpanel" aria-labelledby="tab-platform">
+          <header class="case-head">
+            <p class="case-kind">AI infrastructure</p>
+            <h3>Sovereign AI platform</h3>
+            <p class="case-sum">A local AI platform on Kubernetes: workflow builders, automation and open-weight models running on infrastructure you control, deployed through GitOps and watched with Grafana.</p>
+          </header>
+          <ol class="flow" aria-label="Platform layout">
+            <li class="node">Git repository</li>
+            <li class="node">ArgoCD<small>GitOps sync</small></li>
+            <li class="node node-ai">Kubernetes cluster<small>Flowise, n8n, Llama 3.2, Qwen 2.5 Coder</small></li>
+            <li class="node">Grafana<small>monitoring</small></li>
+          </ol>
+          <div class="case-body">
+            <div>
+              <h4>What it provides</h4>
+              <ul class="ticks"><li>Local AI workflow development (Flowise)</li><li>AI automation (n8n)</li><li>Local LLM experimentation</li></ul>
+            </div>
+            <div>
+              <h4>How it runs</h4>
+              <ul class="ticks"><li>Kubernetes orchestration</li><li>GitOps-based deployment with ArgoCD</li><li>Monitoring and observability with Grafana</li></ul>
+            </div>
+          </div>
+          <footer class="case-foot">
+            <ul class="tags" aria-label="Technologies"><li>Kubernetes</li><li>ArgoCD</li><li>Flowise</li><li>n8n</li><li>Grafana</li><li>Llama 3.2</li><li>Qwen 2.5 Coder</li></ul>
+            <a class="pill-link" href="https://github.com/TaheerBinHussain/week-4_AI-Platform" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>week-4_AI-Platform<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </footer>
+        </div>
+
+        <div class="case spot" id="p-hr" role="tabpanel" aria-labelledby="tab-hr">
+          <header class="case-head">
+            <p class="case-kind">Autonomous enterprise systems</p>
+            <h3>Autonomous HR &amp; operations platform</h3>
+            <p class="case-sum">Recruitment to Day 1 in one system. HR publishes a vacancy, candidates apply through a live portal, AI screens each resume, and once someone is hired their accounts are provisioned automatically.</p>
+          </header>
+          <ol class="flow" aria-label="How it works">
+            <li class="node">Vacancy &amp; applicant portal</li>
+            <li class="node">FastAPI + n8n<small>workflows</small></li>
+            <li class="node node-ai">OpenAI + Qdrant<small>resume evaluation</small></li>
+            <li class="node">Scores, offers, invites<small>sent via Mailpit</small></li>
+            <li class="node">Day-1 IT<small>GitHub, AWS, Slack</small></li>
+          </ol>
+          <div class="case-body">
+            <div>
+              <h4>Hiring</h4>
+              <ul class="ticks"><li>Recruitment and resume screening</li><li>AI-generated candidate scores</li><li>Offer letters and interview invitations</li><li>Interview scheduling</li></ul>
+            </div>
+            <div>
+              <h4>Onboarding</h4>
+              <p>Automated Day-1 IT provisioning for GitHub, AWS and Slack. The stack runs on Docker Compose with PostgreSQL, Redis and Qdrant.</p>
+            </div>
+          </div>
+          <footer class="case-foot">
+            <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>n8n</li><li>Docker Compose</li><li>PostgreSQL</li><li>Redis</li><li>Qdrant</li><li>Mailpit</li><li>OpenAI</li></ul>
+            <a class="pill-link" href="https://github.com/TaheerBinHussain/autonomous-hr-ops-platform" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>autonomous-hr-ops-platform<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </footer>
+        </div>
+
+        <div class="case spot" id="p-azure" role="tabpanel" aria-labelledby="tab-azure">
+          <header class="case-head">
+            <p class="case-kind">Cloud deployment &amp; recovery</p>
+            <h3>Cloud-native AI &amp; disaster recovery on Azure</h3>
+            <p class="case-sum">A deployment platform on Microsoft Azure where infrastructure is code, every push builds and ships an image, and new versions go out gradually with traffic split across revisions.</p>
+          </header>
+          <ol class="flow" aria-label="Delivery pipeline">
+            <li class="node">Terraform<small>infrastructure as code</small></li>
+            <li class="node">GitHub Actions<small>build &amp; test</small></li>
+            <li class="node">GHCR<small>Docker images</small></li>
+            <li class="node node-ai">Azure Container Apps<small>blue/green, canary, revisions</small></li>
+            <li class="node">App Insights &amp; Azure Monitor</li>
+          </ol>
+          <div class="case-body">
+            <div>
+              <h4>Release strategies</h4>
+              <ul class="ticks"><li>Blue/green deployments</li><li>Canary releases</li><li>Multi-revision traffic management</li><li>Health probes</li></ul>
+            </div>
+            <div>
+              <h4>Around it</h4>
+              <ul class="ticks"><li>Infrastructure as Code with Terraform</li><li>Automated CI/CD and image publishing to GHCR</li><li>Application monitoring</li><li>Budget controls</li></ul>
+            </div>
+          </div>
+          <footer class="case-foot">
+            <ul class="tags" aria-label="Technologies"><li>Azure</li><li>Terraform</li><li>GitHub Actions</li><li>Docker</li><li>GHCR</li><li>Container Apps</li><li>Azure Monitor</li></ul>
+            <a class="pill-link" href="https://github.com/TaheerBinHussain/azure_Disaster_Recovery" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>azure_Disaster_Recovery<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="ghost" data-word="Work" aria-hidden="true"></p>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section class="section research has-ghost" id="research" aria-labelledby="research-title">
+  <div class="wrap">
+    <div class="paper-meta reveal">
+      <p>Independent research, April 2026</p>
+      <p>Self-directed study, not a published paper</p>
+    </div>
+    <h2 id="research-title" class="h-section reveal">From reactive to predictive autoscaling in Kubernetes</h2>
+    <p class="question reveal">Can predictive autoscaling using ARIMA forecasts improve Kubernetes latency and resource efficiency compared with the reactive Horizontal Pod Autoscaler?</p>
+
+    <div class="headline-numbers">
+      <figure class="bignum spot reveal">
+        <figcaption>p95 latency under steady load</figcaption>
+        <p class="bignum-value"><s aria-label="Reactive HPA: 248.7 milliseconds">248.7</s> <span class="count accent" data-to="8.0" data-from="248.7" aria-label="Predictive ARIMA: 8.0 milliseconds">8.0</span><small>ms</small></p>
+        <div class="bars" aria-hidden="true">
+          <div class="bar-row"><span class="bar-label">Reactive HPA</span><span class="bar bar-hpa" style="--v:100%"></span></div>
+          <div class="bar-row"><span class="bar-label">Predictive ARIMA</span><span class="bar bar-pred" style="--v:3.22%"></span></div>
+        </div>
+      </figure>
+      <figure class="bignum spot reveal">
+        <figcaption>CPU consumption relative to HPA</figcaption>
+        <p class="bignum-value"><span class="count accent" data-to="-58.5" data-from="0">-58.5</span><small>%</small></p>
+        <div class="bars" aria-hidden="true">
+          <div class="bar-row"><span class="bar-label">Reactive HPA</span><span class="bar bar-hpa" style="--v:100%"></span></div>
+          <div class="bar-row"><span class="bar-label">Predictive ARIMA</span><span class="bar bar-pred" style="--v:41.5%"></span></div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="research-grid">
+      <div class="r-col reveal">
+        <h3>Method</h3>
+        <p>I built a custom predictive autoscaling controller that forecasts load with ARIMA and scales ahead of demand, then compared it with Kubernetes' built-in reactive HPA across 40 controlled experiments driven by k6.</p>
+        <ol class="pflow" aria-label="Experiment setup">
+          <li>k6 load generator</li>
+          <li>Service on Kubernetes</li>
+          <li>Prometheus metrics</li>
+          <li>ARIMA controller <em>vs</em> reactive HPA</li>
+        </ol>
+      </div>
+      <div class="r-col reveal">
+        <h3>Workload patterns</h3>
+        <ul class="workloads">
+          <li><svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 10H58"/></svg>Steady</li>
+          <li><svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 16H20V4H34V16H58"/></svg>Burst</li>
+          <li><svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 17L58 3"/></svg>Ramp</li>
+          <li><svg viewBox="0 0 60 20" aria-hidden="true"><path d="M2 15L10 15 13 3 16 15 30 15 33 5 36 15 46 15 49 2 52 15H58"/></svg>Spiky</li>
+        </ul>
+        <h3>Measured</h3>
+        <p>p95 latency, error rate, scaling latency, CPU-replica-seconds, over-provisioning ratio</p>
+      </div>
+      <div class="r-col reveal">
+        <div class="finding">
+          <h3>But under sudden bursts</h3>
+          <p>Reactive HPA performed better. That fits how the two approaches work: a forecast built from recent history has no warning of a sudden spike, while HPA reacts to the load that is actually arriving.</p>
+        </div>
+        <h3>Limitations</h3>
+        <ul class="ticks">
+          <li>The predictive gains held for steady load, not for sudden bursts.</li>
+          <li>Results come from 40 controlled runs in my own test setup and haven't been peer-reviewed.</li>
+        </ul>
+      </div>
+    </div>
+    <ul class="tags tags-quiet" aria-label="Technologies"><li>Python</li><li>Kubernetes</li><li>Prometheus</li><li>k6</li></ul>
+  </div>
+  <p class="ghost" data-word="Research" aria-hidden="true"></p>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience has-ghost" id="experience" aria-labelledby="exp-title">
+  <div class="wrap">
+    <h2 id="exp-title" class="h-section reveal">Experience</h2>
+    <div class="roles">
+      <article class="role reveal">
+        <p class="role-when">Jul 2026 - present</p>
+        <div class="role-main">
+          <h3>DevOps Intern</h3>
+          <p class="role-where">Davine Technologies, remote (India)</p>
+          <p>Hands-on internship work across Linux administration, networking, Bash scripting and automation, and web-server configuration; containers with Docker and Docker Compose; Kubernetes; CI/CD with Jenkins; provisioning with Terraform and Ansible; and basic observability workflows with Prometheus, Grafana and Node Exporter, covering Linux logs, metrics, dashboards and alerts.</p>
+          <ul class="tags"><li>Linux</li><li>Bash</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Terraform</li><li>Ansible</li><li>Prometheus</li><li>Grafana</li></ul>
+        </div>
+      </article>
+      <article class="role reveal">
+        <p class="role-when">Jul - Sep 2026</p>
+        <div class="role-main">
+          <h3>Cloud &amp; DevOps Engineering Intern</h3>
+          <p class="role-where">Digitalsofts, on-site (Pakistan). Supervised by Tariq Mahmood, VP &amp; CTO</p>
+          <p>Completed six engineering projects spanning developer tooling, a production backend, multi-agent systems, a Kubernetes AI platform, an autonomous HR platform, and Azure deployment with disaster recovery.</p>
+          <a class="text-link" href="#work">See the six projects</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="timeline-wrap">
+      <div class="timeline-head">
+        <h3>Timeline</h3>
+        <div class="filters" role="group" aria-label="Filter timeline">
+          <button type="button" class="filter" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="work">Work</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="research">Research</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="project">Projects</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="academic">Academic</button>
+        </div>
+      </div>
+      <div class="timeline">
+        <section class="t-year reveal" aria-label="2024">
+          <p class="t-year-num" data-year="2024" aria-hidden="true"></p>
+          <ol>
+            <li class="ev" data-type="academic"><span class="ev-date">Aug</span><span class="ev-text">Started BS Computer Science at FAST-NUCES</span></li>
+          </ol>
+        </section>
+        <section class="t-year reveal" aria-label="2025">
+          <p class="t-year-num" data-year="2025" aria-hidden="true"></p>
+          <ol>
+            <li class="ev" data-type="project"><span class="ev-date">Sep</span><span class="ev-text">DevSecOps CI/CD pipeline for a Netflix clone on AWS EC2</span></li>
+            <li class="ev" data-type="project"><span class="ev-date">Oct</span><span class="ev-text">Tic-Tac-Toe CI/CD on AWS EKS with security scanning</span></li>
+            <li class="ev" data-type="academic"><span class="ev-date">Oct</span><span class="ev-text">Linux file &amp; user management automation in Bash</span></li>
+            <li class="ev" data-type="work"><span class="ev-date">Nov</span><span class="ev-text">Volunteered at the Daira hackathon, FAST-NUCES</span></li>
+          </ol>
+        </section>
+        <section class="t-year t-year-now reveal" aria-label="2026">
+          <p class="t-year-num" data-year="2026" aria-hidden="true"></p>
+          <ol>
+            <li class="ev" data-type="project"><span class="ev-date">Jan</span><span class="ev-text">Kubernetes voting app with Prometheus &amp; Grafana</span></li>
+            <li class="ev" data-type="project"><span class="ev-date">Feb</span><span class="ev-text">MERN chat application deployed on Kubernetes</span></li>
+            <li class="ev" data-type="academic"><span class="ev-date">Feb</span><span class="ev-text">Dynamic pathfinding agent (A*, Greedy Best-First)</span></li>
+            <li class="ev ev-key" data-type="research"><span class="ev-date">Apr</span><span class="ev-text">Predictive autoscaling research: ARIMA vs reactive HPA</span></li>
+            <li class="ev" data-type="academic"><span class="ev-date">May</span><span class="ev-text">COVID-19 statistical analysis dashboard</span></li>
+            <li class="ev ev-key" data-type="work"><span class="ev-date">Jul</span><span class="ev-text">Digitalsofts internship: agentic systems, AI infrastructure, Azure</span></li>
+            <li class="ev ev-key" data-type="work"><span class="ev-date">Jul</span><span class="ev-text">Davine Technologies DevOps internship begins</span></li>
+            <li class="ev" data-type="project"><span class="ev-date">Jul</span><span class="ev-text">Started building CareerOS</span></li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </div>
+  <p class="ghost" data-word="Experience" aria-hidden="true"></p>
+</section>
+
+<!-- ============ SELECTED PROJECTS ============ -->
+<section class="section projects" id="projects" aria-labelledby="proj-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="proj-title" class="h-section reveal">Selected projects</h2>
+      <p class="lede reveal">Personal projects, from security-scanned CI/CD pipelines to applications running on Kubernetes.</p>
+    </div>
+    <div class="index">
+      <article class="row row-live reveal" id="s-careeros">
+        <p class="row-when">Jul 2026 - present</p>
+        <div class="row-main">
+          <h3>CareerOS <span class="status"><span class="live-dot" aria-hidden="true"></span>In progress</span></h3>
+          <p>A full-stack SaaS platform for career readiness I'm currently building: AI-powered resume tailoring, interview preparation, skill analysis, GitHub repository analysis, personalized recommendations and automated workflows.</p>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>AI APIs</li></ul>
+        </div>
+      </article>
+      <article class="row reveal" id="s-chat">
+        <p class="row-when">Feb 2026</p>
+        <div class="row-main">
+          <h3>Full-stack chat application on Kubernetes</h3>
+          <p>A MERN chat app, containerized and deployed on Kubernetes with hand-configured Deployments, Services, ConfigMaps, Secrets and networking.</p>
+          <ul class="tags"><li>MERN</li><li>Docker</li><li>Kubernetes</li></ul>
+        </div>
+        <a class="pill-link" href="https://github.com/TaheerBinHussain/full-stack_chatApp" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="row reveal" id="s-voting">
+        <p class="row-when">Jan 2026</p>
+        <div class="row-main">
+          <h3>Kubernetes voting app: monitoring &amp; observability</h3>
+          <p>A microservices voting application on Kubernetes, configured with Helm and monitored with Prometheus and Grafana.</p>
+          <ul class="tags"><li>Kubernetes</li><li>Helm</li><li>Prometheus</li><li>Grafana</li></ul>
+        </div>
+        <a class="pill-link" href="https://github.com/TaheerBinHussain/k8s-kind-voting-app" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="row reveal" id="s-tictactoe">
+        <p class="row-when">Oct 2025</p>
+        <div class="row-main">
+          <h3>Tic-Tac-Toe: CI/CD, AWS EKS &amp; security</h3>
+          <p>An automated CI/CD workflow that builds with Docker, scans with SonarQube and Trivy, deploys to AWS EKS and reports pipeline results to Slack.</p>
+          <ul class="tags"><li>GitHub Actions</li><li>Docker</li><li>AWS EKS</li><li>SonarQube</li><li>Trivy</li><li>Slack</li></ul>
+        </div>
+        <a class="pill-link" href="https://github.com/TaheerBinHussain/TIC-TAC-TOE" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="row reveal" id="s-netflix">
+        <p class="row-when">Sep 2025</p>
+        <div class="row-main">
+          <h3>Netflix clone: DevSecOps CI/CD pipeline</h3>
+          <p>An automated pipeline that builds a Dockerized app, scans it with SonarQube and Trivy, and deploys it to AWS EC2.</p>
+          <ul class="tags"><li>Docker</li><li>GitHub Actions</li><li>AWS EC2</li><li>SonarQube</li><li>Trivy</li></ul>
+        </div>
+        <a class="pill-link" href="https://github.com/TaheerBinHussain/Netflix-clone" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>Code<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+
+    <div class="sub-head-row reveal"><h3 class="sub-head">Academic projects</h3><p class="sub-count">13 projects</p></div>
+    <div class="acad">
+      <article class="acad-item spot acad-feat reveal">
+        <p class="acad-when">May 2026. Supervised by Muhammad Munawar, Lecturer</p>
+        <h4>COVID-19 analysis dashboard</h4>
+        <p class="acad-desc">Interactive dashboard analyzing COVID-19 data across 200+ countries, with interactive maps, time series, descriptive statistics, confidence intervals, probability distributions and linear regression.</p>
+        <p class="acad-tech">Python, Pandas, Plotly, SciPy, Dash</p>
+        <a class="card-link" href="https://lnkd.in/ej74B7Hv" target="_blank" rel="noopener">Open the dashboard<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot acad-feat reveal">
+        <p class="acad-when">Feb 2026. Supervised by Aqsa Younas, Lecturer</p>
+        <h4>Dynamic pathfinding agent</h4>
+        <p class="acad-desc">A* and Greedy Best-First Search on dynamic grids with changing obstacles, comparing Manhattan and Euclidean heuristics.</p>
+        <p class="acad-tech">Python, Artificial Intelligence, A*</p>
+        <a class="card-link" href="https://lnkd.in/dEBVMQ2C" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot acad-feat reveal">
+        <p class="acad-when">Oct 2025</p>
+        <h4>Linux file &amp; user management automation</h4>
+        <p class="acad-desc">A Bash utility for file creation, compression, archiving, permissions and ownership, plus Linux user and group administration.</p>
+        <p class="acad-tech">Linux, Bash</p>
+        <a class="card-link" href="https://lnkd.in/dVWQxcmd" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Course registration simulator</h4>
+        <p class="acad-desc">A course registration simulator written in C, using Pthreads for threading and GTK+3 for its desktop interface.</p>
+        <p class="acad-tech">C, Pthreads, GTK+3</p>
+        <a class="card-link" href="https://lnkd.in/dp5yUApB" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Smart city traffic &amp; emergency AI</h4>
+        <p class="acad-desc">An AI system for smart-city traffic and emergency handling, combining an artificial neural network with constraint satisfaction (CSP).</p>
+        <p class="acad-tech">Python, ANN, CSP</p>
+        <a class="card-link" href="https://lnkd.in/d54c92vE" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Smart city transport database</h4>
+        <p class="acad-desc">A relational database for a smart-city transport system, designed and queried in Oracle 11g with SQL.</p>
+        <p class="acad-tech">Oracle 11g, SQL</p>
+        <a class="card-link" href="https://lnkd.in/dU8bk_8U" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Wumpus World logic agent</h4>
+        <p class="acad-desc">A logic agent for the Wumpus World that reasons about the cave using resolution refutation, running in the browser.</p>
+        <p class="acad-tech">JavaScript, resolution refutation</p>
+        <a class="card-link" href="https://lnkd.in/dPSBUUih" target="_blank" rel="noopener">Open the demo<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>GridPath-AI blind search visualizer</h4>
+        <p class="acad-desc">A visualizer for blind (uninformed) search algorithms on a grid, built with Python and Tkinter.</p>
+        <p class="acad-tech">Python, Tkinter</p>
+        <a class="card-link" href="https://lnkd.in/dTvFzM3T" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Graph analysis engine without STL</h4>
+        <p class="acad-desc">A graph analysis engine in C++ written without the STL, implementing Dijkstra's shortest paths and Kruskal's minimum spanning tree.</p>
+        <p class="acad-tech">C++, Dijkstra, Kruskal</p>
+        <a class="card-link" href="https://lnkd.in/drG76Sef" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>DSA visualizer compiled to WebAssembly</h4>
+        <p class="acad-desc">Data structure and algorithm visualizations written in C++ and compiled to WebAssembly so they run in the browser.</p>
+        <p class="acad-tech">C++, WebAssembly</p>
+        <a class="card-link" href="https://lnkd.in/d8PSAWmU" target="_blank" rel="noopener">Open the demo<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Atari Breakout clone</h4>
+        <p class="acad-desc">A clone of the arcade game Atari Breakout, written in x86 Assembly.</p>
+        <p class="acad-tech">x86 Assembly</p>
+        <a class="card-link" href="https://lnkd.in/dRycXP-F" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Adventure Quest</h4>
+        <p class="acad-desc">A two-player strategy game in C++, built around object-oriented design.</p>
+        <p class="acad-tech">C++, OOP</p>
+        <a class="card-link" href="https://lnkd.in/dpxNUWEX" target="_blank" rel="noopener">View the code<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="acad-item spot reveal">
+        <p class="acad-when">Coursework</p>
+        <h4>Legends of Valor</h4>
+        <p class="acad-desc">A console role-playing game in C++, built around object-oriented design.</p>
+        <p class="acad-tech">C++, OOP</p>
+      </article>
+    </div>
+  </div>
+  <p class="ghost" data-word="Projects" aria-hidden="true"></p>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section stack-section has-ghost" id="stack" aria-labelledby="stack-h">
+  <div class="wrap">
+    <h2 id="stack-h" class="h-section reveal">Technical stack</h2>
+    <dl class="stack">
+      <div class="stack-group spot reveal">
+        <dt>AI &amp; agentic systems</dt>
+        <dd>
+          <ul class="logos" aria-hidden="true"><li style="--i:0"><img src="assets/logos/crewai.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>CrewAI</span></li><li style="--i:1"><img src="assets/logos/pydantic.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Pydantic AI</span></li><li style="--i:2"><img src="assets/logos/langgraph.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>LangGraph</span></li></ul>
+          <p>Agentic AI, LLM applications, OpenAI Agents SDK, CrewAI, Pydantic AI, Agno, LangGraph, A2A</p>
+        </dd>
+      </div>
+      <div class="stack-group spot reveal">
+        <dt>Cloud &amp; infrastructure</dt>
+        <dd>
+          <ul class="logos" aria-hidden="true"><li style="--i:0"><img src="assets/logos/aws.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>AWS</span></li><li style="--i:1"><img src="assets/logos/azure.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Azure</span></li><li style="--i:2"><img src="assets/logos/linux.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Linux</span></li><li style="--i:3"><img src="assets/logos/docker.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Docker</span></li><li style="--i:4"><img src="assets/logos/kubernetes.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Kubernetes</span></li><li style="--i:5"><img src="assets/logos/helm.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Helm</span></li><li style="--i:6"><img src="assets/logos/terraform.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Terraform</span></li><li style="--i:7"><img src="assets/logos/ansible.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Ansible</span></li><li style="--i:8"><img src="assets/logos/githubactions.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>GitHub Actions</span></li><li style="--i:9"><img src="assets/logos/argocd.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Argo CD</span></li></ul>
+          <p>AWS, Azure, Linux, Docker, Kubernetes, Helm, Terraform, Ansible, GitHub Actions, GitOps</p>
+        </dd>
+      </div>
+      <div class="stack-group spot reveal">
+        <dt>Observability</dt>
+        <dd>
+          <ul class="logos" aria-hidden="true"><li style="--i:0"><img src="assets/logos/prometheus.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Prometheus</span></li><li style="--i:1"><img src="assets/logos/grafana.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Grafana</span></li></ul>
+          <p>Prometheus, Grafana, logging, metrics, health monitoring</p>
+        </dd>
+      </div>
+      <div class="stack-group spot reveal">
+        <dt>Backend &amp; data stores</dt>
+        <dd>
+          <ul class="logos" aria-hidden="true"><li style="--i:0"><img src="assets/logos/postgresql.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>PostgreSQL</span></li><li style="--i:1"><img src="assets/logos/redis.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Redis</span></li><li style="--i:2"><img src="assets/logos/mysql.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>MySQL</span></li><li style="--i:3"><img src="assets/logos/mongodb.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>MongoDB</span></li><li style="--i:4"><img src="assets/logos/dynamodb.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>DynamoDB</span></li></ul>
+          <p>REST APIs, PostgreSQL, Redis, MySQL, MongoDB, DynamoDB</p>
+        </dd>
+      </div>
+      <div class="stack-group spot reveal">
+        <dt>Languages &amp; frameworks</dt>
+        <dd>
+          <ul class="logos" aria-hidden="true"><li style="--i:0"><img src="assets/logos/python.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Python</span></li><li style="--i:1"><img src="assets/logos/cplusplus.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>C++</span></li><li style="--i:2"><img src="assets/logos/c.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>C</span></li><li style="--i:3"><img src="assets/logos/bash.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Bash</span></li><li style="--i:4"><img src="assets/logos/fastapi.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>FastAPI</span></li><li style="--i:5"><img src="assets/logos/flask.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Flask</span></li></ul>
+          <p>Python, C++, C, Bash, FastAPI, Flask</p>
+        </dd>
+      </div>
+      <div class="stack-group spot reveal">
+        <dt>Data</dt>
+        <dd>
+          <ul class="logos" aria-hidden="true"><li style="--i:0"><img src="assets/logos/pandas.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Pandas</span></li><li style="--i:1"><img src="assets/logos/numpy.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>NumPy</span></li><li style="--i:2"><img src="assets/logos/plotly.svg" alt="" width="30" height="30" loading="lazy" decoding="async"><span>Plotly</span></li></ul>
+          <p>Pandas, NumPy, Plotly, statistical analysis</p>
+        </dd>
+      </div>
+    </dl>
+  </div>
+  <p class="ghost" data-word="Stack" aria-hidden="true"></p>
+</section>
+
+<!-- ============ EDUCATION & CREDENTIALS ============ -->
+<section class="section education" id="education" aria-labelledby="edu-title">
+  <div class="wrap">
+    <h2 id="edu-title" class="h-section reveal">Education &amp; credentials</h2>
+    <div class="edu-grid">
+      <article class="edu reveal">
+        <p class="edu-when">Aug 2024 - Jun 2028</p>
+        <h3>Bachelor of Computer Science</h3>
+        <p class="edu-school">National University of Computer and Emerging Sciences (FAST-NUCES), Faisalabad</p>
+        <p class="gpa"><span class="gpa-num count" data-to="3.78" data-from="0">3.78</span><span class="gpa-of">/ 4.0 CGPA</span></p>
+        <ul class="honours">
+          <li>Dean's List every semester since enrollment</li>
+          <li>Silver Medal, 2nd semester</li>
+          <li>Bronze Medal, 1st semester</li>
+        </ul>
+        <h4>Relevant coursework</h4>
+        <p class="coursework">Artificial Intelligence, Database Systems, Operating Systems, Software Design and Analysis, Data Structures, Discrete Structures, Theory of Automata, Probability and Statistics, Linear Algebra, Multivariable Calculus, Digital Logic Design, Object-Oriented Programming, Programming Fundamentals</p>
+      </article>
+      <div class="creds">
+        <article class="cert spot cert-main reveal">
+          <div class="cert-top">
+            <img class="cert-logo-aws" src="assets/logos/aws-light.svg" alt="Amazon Web Services" width="84" height="84">
+            <p class="cert-level">Associate</p>
+          </div>
+          <p class="cert-issuer">Amazon Web Services certification</p>
+          <h3>AWS Certified Solutions Architect, Associate</h3>
+          <p class="cert-score"><span class="cert-num count" data-to="915" data-from="0">915</span><span>/ 1000 score<br>Exam SAA-C03</span></p>
+          <div class="cert-meter" aria-hidden="true"><span style="--v:91.5%"></span><i style="--p:72%"></i></div>
+          <p class="cert-pass">Passing score is 720</p>
+        </article>
+        <article class="cert spot cert-course reveal">
+          <div class="cert-brand"><img src="assets/logos/coursera.svg" alt="" width="28" height="28"><span>Coursera</span></div>
+          <h3>Introduction to DevSecOps</h3>
+          <p class="cert-meta">Offered by Board Infinity, 2025</p>
+        </article>
+        <article class="cert spot cert-course reveal">
+          <div class="cert-brand"><img src="assets/logos/coursera.svg" alt="" width="28" height="28"><span>Coursera</span><img class="cert-partner" src="assets/logos/linuxfoundation.svg" alt="" width="24" height="24"><span>The Linux Foundation</span></div>
+          <h3>Linux for Developers</h3>
+          <p class="cert-meta">Offered by The Linux Foundation, 2025</p>
+        </article>
+        <article class="cert spot cert-vol reveal">
+          <p class="cert-issuer">Volunteering</p>
+          <h3>Volunteer, Daira hackathon</h3>
+          <p class="cert-meta">FAST-NUCES, November 2025</p>
+          <p>Helped organize and coordinate the event and supported participants.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="buddy" tabindex="0" role="img" aria-label="Kiko, a small orange fox that follows your cursor. Press to make it hop.">
+    <span class="buddy-bubble" aria-hidden="true">hi there!</span>
+    <span class="buddy-shadow" aria-hidden="true"></span>
+    <span class="buddy-zzz" aria-hidden="true"><i>z</i><i>z</i><i>z</i></span>
+  </div>
+  <h2 id="contact-title" class="monument monument-contact">
+    <span class="m-line m-line-1"><span>Get in</span></span>
+    <span class="m-line m-line-2"><span>touch</span></span>
+  </h2>
+  <div class="wrap contact-inner">
+    <p class="contact-lede">Open to internships, research collaborations, graduate study conversations and freelance infrastructure work. Email is the fastest way to reach me.</p>
+    <div class="contact-card">
+      <a class="email magnetic" data-magnet="0.12" href="mailto:taheerbinhussain@gmail.com">taheerbinhussain@gmail.com</a>
+      <div class="contact-actions">
+        <button type="button" class="copy pill magnetic" data-copy="taheerbinhussain@gmail.com">
+          <svg aria-hidden="true" class="ic-copy"><use href="#i-copy"/></svg><svg aria-hidden="true" class="ic-check"><use href="#i-check"/></svg><span class="copy-label">Copy email</span>
+        </button>
+        <a class="pill magnetic" href="https://github.com/TaheerBinHussain" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+        <a class="pill magnetic" href="https://www.linkedin.com/in/taheer-bin-hussain-1a5714327/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Taheer Bin Hussain, Faisalabad</p>
+      <p>Hand-written HTML, CSS and JavaScript. No frameworks, no trackers.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</section>
+
+</main>
+
+<dialog id="palette" class="palette" aria-label="Jump to a section, project or action">
+  <div class="palette-box">
+    <div class="palette-search">
+      <svg aria-hidden="true"><use href="#i-search"/></svg>
+      <input class="palette-input" type="text" placeholder="Search sections, projects and actions" aria-label="Search" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" autocomplete="off" spellcheck="false">
+      <kbd>Esc</kbd>
+    </div>
+    <ul id="palette-list" class="palette-list" role="listbox" aria-label="Results"></ul>
+    <p class="palette-empty" hidden>Nothing matches that. Try "kubernetes" or "email".</p>
+    <div class="palette-foot" aria-hidden="true"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> move</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</dialog>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/lenis.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
